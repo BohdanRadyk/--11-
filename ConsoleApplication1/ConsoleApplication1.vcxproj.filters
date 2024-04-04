@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\lab 6">
+      <UniqueIdentifier>{ad8c6a48-bf2d-4392-92f0-ea1b0629f239}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\lab 6A">
+      <UniqueIdentifier>{6b8d6797-df12-4e20-af09-2addc5e378e0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\lab 7">
+      <UniqueIdentifier>{d3c9b971-5677-4fcb-9f29-9153af872a79}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\lab 7A">
+      <UniqueIdentifier>{7ab8823b-a2ca-436f-809a-c00ef1247c59}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\lab 10-11">
+      <UniqueIdentifier>{3db0ee50-f379-4ed0-a22e-83ea4c1e17e0}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="6_1.cpp">
+      <Filter>Source Files\lab 6</Filter>
+    </ClCompile>
+    <ClCompile Include="6_2.cpp">
+      <Filter>Source Files\lab 6</Filter>
+    </ClCompile>
+    <ClCompile Include="6_3.cpp">
+      <Filter>Source Files\lab 6</Filter>
+    </ClCompile>
+    <ClCompile Include="6_4.cpp">
+      <Filter>Source Files\lab 6</Filter>
+    </ClCompile>
+    <ClCompile Include="6_5.cpp">
+      <Filter>Source Files\lab 6</Filter>
+    </ClCompile>
+    <ClCompile Include="6a_3.cpp">
+      <Filter>Source Files\lab 6A</Filter>
+    </ClCompile>
+    <ClCompile Include="6a_4.cpp">
+      <Filter>Source Files\lab 6A</Filter>
+    </ClCompile>
+    <ClCompile Include="6a_5.cpp">
+      <Filter>Source Files\lab 6A</Filter>
+    </ClCompile>
+    <ClCompile Include="6a_6.cpp">
+      <Filter>Source Files\lab 6A</Filter>
+    </ClCompile>
+    <ClCompile Include="6a_7.cpp">
+      <Filter>Source Files\lab 6A</Filter>
+    </ClCompile>
+    <ClCompile Include="6a_8.cpp">
+      <Filter>Source Files\lab 6A</Filter>
+    </ClCompile>
+    <ClCompile Include="6a_9.cpp">
+      <Filter>Source Files\lab 6A</Filter>
+    </ClCompile>
+    <ClCompile Include="6a_10.cpp">
+      <Filter>Source Files\lab 6A</Filter>
+    </ClCompile>
+    <ClCompile Include="7.2_1.cpp">
+      <Filter>Source Files\lab 7</Filter>
+    </ClCompile>
+    <ClCompile Include="7.2_2.cpp">
+      <Filter>Source Files\lab 7</Filter>
+    </ClCompile>
+    <ClCompile Include="7.2_3.cpp">
+      <Filter>Source Files\lab 7</Filter>
+    </ClCompile>
+    <ClCompile Include="7.2_4.cpp">
+      <Filter>Source Files\lab 7</Filter>
+    </ClCompile>
+    <ClCompile Include="7.2_5.cpp">
+      <Filter>Source Files\lab 7</Filter>
+    </ClCompile>
+    <ClCompile Include="7.2_6.cpp">
+      <Filter>Source Files\lab 7</Filter>
+    </ClCompile>
+    <ClCompile Include="7.2_7.cpp">
+      <Filter>Source Files\lab 7</Filter>
+    </ClCompile>
+    <ClCompile Include="7.3.cpp">
+      <Filter>Source Files\lab 7</Filter>
+    </ClCompile>
+    <ClCompile Include="7.4_1.cpp">
+      <Filter>Source Files\lab 7</Filter>
+    </ClCompile>
+    <ClCompile Include="7.4_2.cpp">
+      <Filter>Source Files\lab 7</Filter>
+    </ClCompile>
+    <ClCompile Include="7.4_3.cpp">
+      <Filter>Source Files\lab 7</Filter>
+    </ClCompile>
+    <ClCompile Include="7a_1.cpp">
+      <Filter>Source Files\lab 7A</Filter>
+    </ClCompile>
+    <ClCompile Include="7a_2.cpp">
+      <Filter>Source Files\lab 7A</Filter>
+    </ClCompile>
+    <ClCompile Include="7a_3.cpp">
+      <Filter>Source Files\lab 7A</Filter>
+    </ClCompile>
+    <ClCompile Include="7a.4_1.cpp">
+      <Filter>Source Files\lab 7A</Filter>
+    </ClCompile>
+    <ClCompile Include="7a.4_2.cpp">
+      <Filter>Source Files\lab 7A</Filter>
+    </ClCompile>
+    <ClCompile Include="7a.4_3.cpp">
+      <Filter>Source Files\lab 7A</Filter>
+    </ClCompile>
+    <ClCompile Include="lab10-11.2_1.cpp">
+      <Filter>Source Files\lab 10-11</Filter>
+    </ClCompile>
+    <ClCompile Include="lab10-11.2_2.cpp">
+      <Filter>Source Files\lab 10-11</Filter>
+    </ClCompile>
+    <ClCompile Include="lab10-11.2_3.cpp">
+      <Filter>Source Files\lab 10-11</Filter>
+    </ClCompile>
+    <ClCompile Include="lab10-11_3.cpp">
+      <Filter>Source Files\lab 10-11</Filter>
+    </ClCompile>
+    <ClCompile Include="lab10-11_4.cpp">
+      <Filter>Source Files\lab 10-11</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
