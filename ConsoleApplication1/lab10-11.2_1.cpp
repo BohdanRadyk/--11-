@@ -11,7 +11,6 @@ int main(void)
 
 	int magic;
 	int guess;
-	time_t t;
 	srand(time(NULL));
 	magic = rand() % 100;
 restart:

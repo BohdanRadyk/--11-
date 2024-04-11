@@ -1,2 +1,4 @@
-﻿  lab10-11_4.cpp
+﻿  lab12.9.cpp
+C:\Users\Nazar\source\repos\--11-\ConsoleApplication1\lab12.9.cpp(13,26): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\Nazar\source\repos\--11-\ConsoleApplication1\lab12.9.cpp(14,16): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
   ConsoleApplication1.vcxproj -> C:\Users\Nazar\Source\Repos\--11-\x64\Debug\ConsoleApplication1.exe
