@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\Nazar\\source\\repos\\--11-\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{CC858A84-2AEE-4D74-839B-08AD394454C1}|ConsoleApplication1\\ConsoleApplication1.vcxproj|C:\\Users\\Nazar\\source\\repos\\--11-\\ConsoleApplication1\\lab12.9.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{CC858A84-2AEE-4D74-839B-08AD394454C1}|ConsoleApplication1\\ConsoleApplication1.vcxproj|solutionrelative:ConsoleApplication1\\lab12.9.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{CC858A84-2AEE-4D74-839B-08AD394454C1}|ConsoleApplication1\\ConsoleApplication1.vcxproj|C:\\Users\\Nazar\\source\\repos\\--11-\\ConsoleApplication1\\lab10-11_4.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{CC858A84-2AEE-4D74-839B-08AD394454C1}|ConsoleApplication1\\ConsoleApplication1.vcxproj|solutionrelative:ConsoleApplication1\\lab10-11_4.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
@@ -19,6 +23,19 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "lab12.9.cpp",
+              "DocumentMoniker": "C:\\Users\\Nazar\\source\\repos\\--11-\\ConsoleApplication1\\lab12.9.cpp",
+              "RelativeDocumentMoniker": "ConsoleApplication1\\lab12.9.cpp",
+              "ToolTip": "C:\\Users\\Nazar\\source\\repos\\--11-\\ConsoleApplication1\\lab12.9.cpp",
+              "RelativeToolTip": "ConsoleApplication1\\lab12.9.cpp",
+              "ViewState": "AQIAAKYAAAAAAAAAAAAAALQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-04-11T13:19:30.962Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "lab10-11_4.cpp",
               "DocumentMoniker": "C:\\Users\\Nazar\\source\\repos\\--11-\\ConsoleApplication1\\lab10-11_4.cpp",
               "RelativeDocumentMoniker": "ConsoleApplication1\\lab10-11_4.cpp",

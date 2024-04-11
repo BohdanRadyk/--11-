@@ -1,4 +1,13 @@
 ﻿  lab12.9.cpp
 C:\Users\Nazar\source\repos\--11-\ConsoleApplication1\lab12.9.cpp(13,26): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
 C:\Users\Nazar\source\repos\--11-\ConsoleApplication1\lab12.9.cpp(14,16): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\Nazar\source\repos\--11-\ConsoleApplication1\lab12.9.cpp(44,5): warning C4305: '=': truncation from 'double' to 'float'
+C:\Users\Nazar\source\repos\--11-\ConsoleApplication1\lab12.9.cpp(50,26): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\Nazar\source\repos\--11-\ConsoleApplication1\lab12.9.cpp(51,18): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\Nazar\source\repos\--11-\ConsoleApplication1\lab12.9.cpp(94,7): warning C4305: '=': truncation from 'double' to 'float'
+C:\Users\Nazar\source\repos\--11-\ConsoleApplication1\lab12.9.cpp(98,26): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\Nazar\source\repos\--11-\ConsoleApplication1\lab12.9.cpp(99,18): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\Nazar\source\repos\--11-\ConsoleApplication1\lab12.9.cpp(137,7): warning C4305: '=': truncation from 'double' to 'float'
+C:\Users\Nazar\source\repos\--11-\ConsoleApplication1\lab12.9.cpp(141,26): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\Nazar\source\repos\--11-\ConsoleApplication1\lab12.9.cpp(142,18): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
   ConsoleApplication1.vcxproj -> C:\Users\Nazar\Source\Repos\--11-\x64\Debug\ConsoleApplication1.exe
