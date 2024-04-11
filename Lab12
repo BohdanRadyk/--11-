@@ -1,0 +1,45 @@
+1)
+#include <stdio.h>
+int main (void)
+{
+    int x;
+    for (x = 1; x <= 100; x ++)
+        printf ( "% d", x);
+    return 0;
+}
+2)
+Version:0.9 StartHTML:0000000105 EndHTML:0000001432 StartFragment:0000000141 EndFragment:0000001392
+#include<stdio.h>
+ Int main()
+{
+int i=2;
+while (i<=1024)
+{
+i = i*2;
+printf("%d\n",i);
+}
+}
+3)
+#include<stdio.h>
+ int main()
+{
+    int j=0,k=0;
+    while(j<5)
+    {
+        k+=10;
+        j++;
+    }
+    printf("k=%d\n",k);
+}
+4)
+#include<stdio.h>
+ int main()
+{
+    int a=2, b=10,c;
+    do
+    {
+        b=b+a; c=10*a; a++;
+    }
+    while(a<5);
+    printf("\nb=%d c=%d a=%d",b,c,a);
+}
