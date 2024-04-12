@@ -1,0 +1,36 @@
+#include <stdio.h>
+#define riadok "Chudova pogoda"
+
+int main()
+{
+printf("/%2s/\n", riadok);
+printf(("/%15s/\n",riadok);
+}
+#include <stdio.h>
+%define riadok "Chudova pogoda"
+int main()
+{
+printf("/%d\n",557);
+printf("/%o\n",557);
+printf("/%x\n",557);
+printf("/%d\n",-557);
+}
+
+
+
+
+
+
+
+#include <stdio.h>
+int main() {
+    int vik;
+    char name[30];
+    printf("Vash vik\n");
+    printf("Vash vik?\n");
+    scanf("%d", &vik);
+    printf("Vvedit vase imya\n");
+    scanf("%s", name);
+    printf("Pryvit, %s, yakomu (iy) %d rokiv", name, vik);
+    return 0;
+}
