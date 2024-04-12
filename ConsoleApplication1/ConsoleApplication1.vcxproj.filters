@@ -174,5 +174,11 @@
     <ClCompile Include="lab12.9.cpp">
       <Filter>Source Files\lab 12</Filter>
     </ClCompile>
+    <ClCompile Include="lab12.10.cpp">
+      <Filter>Source Files\lab 12</Filter>
+    </ClCompile>
+    <ClCompile Include="lab12.11.cpp">
+      <Filter>Source Files\lab 12</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
