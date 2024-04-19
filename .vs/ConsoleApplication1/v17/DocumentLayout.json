@@ -3,16 +3,56 @@
   "WorkspaceRootPath": "C:\\Users\\Nazar\\source\\repos\\--11-\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{CC858A84-2AEE-4D74-839B-08AD394454C1}|ConsoleApplication1\\ConsoleApplication1.vcxproj|C:\\Users\\Nazar\\source\\repos\\--11-\\ConsoleApplication1\\lab12.11.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{CC858A84-2AEE-4D74-839B-08AD394454C1}|ConsoleApplication1\\ConsoleApplication1.vcxproj|solutionrelative:ConsoleApplication1\\lab12.11.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{CC858A84-2AEE-4D74-839B-08AD394454C1}|ConsoleApplication1\\ConsoleApplication1.vcxproj|C:\\Users\\Nazar\\source\\repos\\--11-\\ConsoleApplication1\\lab15-16.3.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{CC858A84-2AEE-4D74-839B-08AD394454C1}|ConsoleApplication1\\ConsoleApplication1.vcxproj|solutionrelative:ConsoleApplication1\\lab15-16.3.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC858A84-2AEE-4D74-839B-08AD394454C1}|ConsoleApplication1\\ConsoleApplication1.vcxproj|C:\\Users\\Nazar\\source\\repos\\--11-\\ConsoleApplication1\\lab15-16.2_1.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{CC858A84-2AEE-4D74-839B-08AD394454C1}|ConsoleApplication1\\ConsoleApplication1.vcxproj|solutionrelative:ConsoleApplication1\\lab15-16.2_1.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC858A84-2AEE-4D74-839B-08AD394454C1}|ConsoleApplication1\\ConsoleApplication1.vcxproj|C:\\Users\\Nazar\\source\\repos\\--11-\\ConsoleApplication1\\lab15-16.2_2.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{CC858A84-2AEE-4D74-839B-08AD394454C1}|ConsoleApplication1\\ConsoleApplication1.vcxproj|solutionrelative:ConsoleApplication1\\lab15-16.2_2.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC858A84-2AEE-4D74-839B-08AD394454C1}|ConsoleApplication1\\ConsoleApplication1.vcxproj|C:\\Users\\Nazar\\source\\repos\\--11-\\ConsoleApplication1\\lab15-16.2_3.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{CC858A84-2AEE-4D74-839B-08AD394454C1}|ConsoleApplication1\\ConsoleApplication1.vcxproj|solutionrelative:ConsoleApplication1\\lab15-16.2_3.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC858A84-2AEE-4D74-839B-08AD394454C1}|ConsoleApplication1\\ConsoleApplication1.vcxproj|C:\\Users\\Nazar\\source\\repos\\--11-\\ConsoleApplication1\\lab15-16.2_4.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{CC858A84-2AEE-4D74-839B-08AD394454C1}|ConsoleApplication1\\ConsoleApplication1.vcxproj|solutionrelative:ConsoleApplication1\\lab15-16.2_4.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC858A84-2AEE-4D74-839B-08AD394454C1}|ConsoleApplication1\\ConsoleApplication1.vcxproj|C:\\Users\\Nazar\\source\\repos\\--11-\\ConsoleApplication1\\lab12.9.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{CC858A84-2AEE-4D74-839B-08AD394454C1}|ConsoleApplication1\\ConsoleApplication1.vcxproj|solutionrelative:ConsoleApplication1\\lab12.9.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CC858A84-2AEE-4D74-839B-08AD394454C1}|ConsoleApplication1\\ConsoleApplication1.vcxproj|C:\\Users\\Nazar\\source\\repos\\--11-\\ConsoleApplication1\\lab12.10.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{CC858A84-2AEE-4D74-839B-08AD394454C1}|ConsoleApplication1\\ConsoleApplication1.vcxproj|solutionrelative:ConsoleApplication1\\lab12.10.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CC858A84-2AEE-4D74-839B-08AD394454C1}|ConsoleApplication1\\ConsoleApplication1.vcxproj|C:\\Users\\Nazar\\source\\repos\\--11-\\ConsoleApplication1\\lab12.9.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{CC858A84-2AEE-4D74-839B-08AD394454C1}|ConsoleApplication1\\ConsoleApplication1.vcxproj|solutionrelative:ConsoleApplication1\\lab12.9.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{CC858A84-2AEE-4D74-839B-08AD394454C1}|ConsoleApplication1\\ConsoleApplication1.vcxproj|C:\\Users\\Nazar\\source\\repos\\--11-\\ConsoleApplication1\\lab12.11.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{CC858A84-2AEE-4D74-839B-08AD394454C1}|ConsoleApplication1\\ConsoleApplication1.vcxproj|solutionrelative:ConsoleApplication1\\lab12.11.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC858A84-2AEE-4D74-839B-08AD394454C1}|ConsoleApplication1\\ConsoleApplication1.vcxproj|C:\\Users\\Nazar\\source\\repos\\--11-\\ConsoleApplication1\\test1.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{CC858A84-2AEE-4D74-839B-08AD394454C1}|ConsoleApplication1\\ConsoleApplication1.vcxproj|solutionrelative:ConsoleApplication1\\test1.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC858A84-2AEE-4D74-839B-08AD394454C1}|ConsoleApplication1\\ConsoleApplication1.vcxproj|C:\\Users\\Nazar\\source\\repos\\--11-\\ConsoleApplication1\\lab13-14.3.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{CC858A84-2AEE-4D74-839B-08AD394454C1}|ConsoleApplication1\\ConsoleApplication1.vcxproj|solutionrelative:ConsoleApplication1\\lab13-14.3.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC858A84-2AEE-4D74-839B-08AD394454C1}|ConsoleApplication1\\ConsoleApplication1.vcxproj|C:\\Users\\Nazar\\source\\repos\\--11-\\ConsoleApplication1\\test.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{CC858A84-2AEE-4D74-839B-08AD394454C1}|ConsoleApplication1\\ConsoleApplication1.vcxproj|solutionrelative:ConsoleApplication1\\test.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC858A84-2AEE-4D74-839B-08AD394454C1}|ConsoleApplication1\\ConsoleApplication1.vcxproj|C:\\Users\\Nazar\\source\\repos\\--11-\\ConsoleApplication1\\lab13-14.2_1.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{CC858A84-2AEE-4D74-839B-08AD394454C1}|ConsoleApplication1\\ConsoleApplication1.vcxproj|solutionrelative:ConsoleApplication1\\lab13-14.2_1.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC858A84-2AEE-4D74-839B-08AD394454C1}|ConsoleApplication1\\ConsoleApplication1.vcxproj|C:\\Users\\Nazar\\source\\repos\\--11-\\ConsoleApplication1\\lab13-14.2_2.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{CC858A84-2AEE-4D74-839B-08AD394454C1}|ConsoleApplication1\\ConsoleApplication1.vcxproj|solutionrelative:ConsoleApplication1\\lab13-14.2_2.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CC858A84-2AEE-4D74-839B-08AD394454C1}|ConsoleApplication1\\ConsoleApplication1.vcxproj|C:\\Users\\Nazar\\source\\repos\\--11-\\ConsoleApplication1\\lab10-11_4.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -31,19 +71,58 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "lab15-16.3.cpp",
+              "DocumentMoniker": "C:\\Users\\Nazar\\source\\repos\\--11-\\ConsoleApplication1\\lab15-16.3.cpp",
+              "RelativeDocumentMoniker": "ConsoleApplication1\\lab15-16.3.cpp",
+              "ToolTip": "C:\\Users\\Nazar\\source\\repos\\--11-\\ConsoleApplication1\\lab15-16.3.cpp",
+              "RelativeToolTip": "ConsoleApplication1\\lab15-16.3.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAALAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-04-19T08:59:43.57Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "lab15-16.2_4.cpp",
+              "DocumentMoniker": "C:\\Users\\Nazar\\source\\repos\\--11-\\ConsoleApplication1\\lab15-16.2_4.cpp",
+              "RelativeDocumentMoniker": "ConsoleApplication1\\lab15-16.2_4.cpp",
+              "ToolTip": "C:\\Users\\Nazar\\source\\repos\\--11-\\ConsoleApplication1\\lab15-16.2_4.cpp",
+              "RelativeToolTip": "ConsoleApplication1\\lab15-16.2_4.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-04-19T08:56:18.565Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "lab15-16.2_1.cpp",
+              "DocumentMoniker": "C:\\Users\\Nazar\\source\\repos\\--11-\\ConsoleApplication1\\lab15-16.2_1.cpp",
+              "RelativeDocumentMoniker": "ConsoleApplication1\\lab15-16.2_1.cpp",
+              "ToolTip": "C:\\Users\\Nazar\\source\\repos\\--11-\\ConsoleApplication1\\lab15-16.2_1.cpp",
+              "RelativeToolTip": "ConsoleApplication1\\lab15-16.2_1.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-04-19T08:40:44.589Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "lab12.11.cpp",
               "DocumentMoniker": "C:\\Users\\Nazar\\source\\repos\\--11-\\ConsoleApplication1\\lab12.11.cpp",
               "RelativeDocumentMoniker": "ConsoleApplication1\\lab12.11.cpp",
               "ToolTip": "C:\\Users\\Nazar\\source\\repos\\--11-\\ConsoleApplication1\\lab12.11.cpp",
               "RelativeToolTip": "ConsoleApplication1\\lab12.11.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-04-12T06:07:58.382Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 6,
               "Title": "lab12.10.cpp",
               "DocumentMoniker": "C:\\Users\\Nazar\\source\\repos\\--11-\\ConsoleApplication1\\lab12.10.cpp",
               "RelativeDocumentMoniker": "ConsoleApplication1\\lab12.10.cpp",
@@ -56,13 +135,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "lab12.9.cpp",
               "DocumentMoniker": "C:\\Users\\Nazar\\source\\repos\\--11-\\ConsoleApplication1\\lab12.9.cpp",
               "RelativeDocumentMoniker": "ConsoleApplication1\\lab12.9.cpp",
               "ToolTip": "C:\\Users\\Nazar\\source\\repos\\--11-\\ConsoleApplication1\\lab12.9.cpp",
               "RelativeToolTip": "ConsoleApplication1\\lab12.9.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAKAAAA",
+              "ViewState": "AQIAAKUAAAAAAAAAAAAAAAQAAAAKAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-04-11T13:19:30.962Z",
               "EditorCaption": ""
@@ -70,6 +149,94 @@
             {
               "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "lab15-16.2_3.cpp",
+              "DocumentMoniker": "C:\\Users\\Nazar\\source\\repos\\--11-\\ConsoleApplication1\\lab15-16.2_3.cpp",
+              "RelativeDocumentMoniker": "ConsoleApplication1\\lab15-16.2_3.cpp",
+              "ToolTip": "C:\\Users\\Nazar\\source\\repos\\--11-\\ConsoleApplication1\\lab15-16.2_3.cpp",
+              "RelativeToolTip": "ConsoleApplication1\\lab15-16.2_3.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-04-19T08:53:10.778Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "lab15-16.2_2.cpp",
+              "DocumentMoniker": "C:\\Users\\Nazar\\source\\repos\\--11-\\ConsoleApplication1\\lab15-16.2_2.cpp",
+              "RelativeDocumentMoniker": "ConsoleApplication1\\lab15-16.2_2.cpp",
+              "ToolTip": "C:\\Users\\Nazar\\source\\repos\\--11-\\ConsoleApplication1\\lab15-16.2_2.cpp",
+              "RelativeToolTip": "ConsoleApplication1\\lab15-16.2_2.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-04-19T08:51:48.261Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "lab13-14.2_2.cpp",
+              "DocumentMoniker": "C:\\Users\\Nazar\\source\\repos\\--11-\\ConsoleApplication1\\lab13-14.2_2.cpp",
+              "RelativeDocumentMoniker": "ConsoleApplication1\\lab13-14.2_2.cpp",
+              "ToolTip": "C:\\Users\\Nazar\\source\\repos\\--11-\\ConsoleApplication1\\lab13-14.2_2.cpp",
+              "RelativeToolTip": "ConsoleApplication1\\lab13-14.2_2.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-04-18T09:46:33.729Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "lab13-14.3.cpp",
+              "DocumentMoniker": "C:\\Users\\Nazar\\source\\repos\\--11-\\ConsoleApplication1\\lab13-14.3.cpp",
+              "RelativeDocumentMoniker": "ConsoleApplication1\\lab13-14.3.cpp",
+              "ToolTip": "C:\\Users\\Nazar\\source\\repos\\--11-\\ConsoleApplication1\\lab13-14.3.cpp",
+              "RelativeToolTip": "ConsoleApplication1\\lab13-14.3.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-04-18T09:50:46.806Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "test1.cpp",
+              "DocumentMoniker": "C:\\Users\\Nazar\\source\\repos\\--11-\\ConsoleApplication1\\test1.cpp",
+              "RelativeDocumentMoniker": "ConsoleApplication1\\test1.cpp",
+              "ToolTip": "C:\\Users\\Nazar\\source\\repos\\--11-\\ConsoleApplication1\\test1.cpp",
+              "RelativeToolTip": "ConsoleApplication1\\test1.cpp",
+              "ViewState": "AQIAABMAAAAAAAAAAAAAACgAAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-04-19T05:50:25.903Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "lab13-14.2_1.cpp",
+              "DocumentMoniker": "C:\\Users\\Nazar\\source\\repos\\--11-\\ConsoleApplication1\\lab13-14.2_1.cpp",
+              "RelativeDocumentMoniker": "ConsoleApplication1\\lab13-14.2_1.cpp",
+              "ToolTip": "C:\\Users\\Nazar\\source\\repos\\--11-\\ConsoleApplication1\\lab13-14.2_1.cpp",
+              "RelativeToolTip": "ConsoleApplication1\\lab13-14.2_1.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-04-18T09:42:41.244Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "test.cpp",
+              "DocumentMoniker": "C:\\Users\\Nazar\\source\\repos\\--11-\\ConsoleApplication1\\test.cpp",
+              "RelativeDocumentMoniker": "ConsoleApplication1\\test.cpp",
+              "ToolTip": "C:\\Users\\Nazar\\source\\repos\\--11-\\ConsoleApplication1\\test.cpp",
+              "RelativeToolTip": "ConsoleApplication1\\test.cpp",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAB0AAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-04-18T08:49:40.985Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
               "Title": "lab10-11_4.cpp",
               "DocumentMoniker": "C:\\Users\\Nazar\\source\\repos\\--11-\\ConsoleApplication1\\lab10-11_4.cpp",
               "RelativeDocumentMoniker": "ConsoleApplication1\\lab10-11_4.cpp",

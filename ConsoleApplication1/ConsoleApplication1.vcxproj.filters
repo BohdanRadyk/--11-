@@ -31,6 +31,12 @@
     <Filter Include="Source Files\lab 12">
       <UniqueIdentifier>{fb6ca361-846d-4bd1-9525-28823f201b07}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\lab 13-14">
+      <UniqueIdentifier>{2ac6f622-7bbf-451b-b184-54605143efe1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\lab15-16">
+      <UniqueIdentifier>{97a40ac2-40b5-4149-b926-bfdc809f8ecf}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="6_1.cpp">
@@ -179,6 +185,36 @@
     </ClCompile>
     <ClCompile Include="lab12.11.cpp">
       <Filter>Source Files\lab 12</Filter>
+    </ClCompile>
+    <ClCompile Include="test.cpp">
+      <Filter>Source Files\lab 12</Filter>
+    </ClCompile>
+    <ClCompile Include="lab13-14.2_1.cpp">
+      <Filter>Source Files\lab 13-14</Filter>
+    </ClCompile>
+    <ClCompile Include="lab13-14.2_2.cpp">
+      <Filter>Source Files\lab 13-14</Filter>
+    </ClCompile>
+    <ClCompile Include="lab13-14.3.cpp">
+      <Filter>Source Files\lab 13-14</Filter>
+    </ClCompile>
+    <ClCompile Include="test1.cpp">
+      <Filter>Source Files\lab 13-14</Filter>
+    </ClCompile>
+    <ClCompile Include="lab15-16.2_1.cpp">
+      <Filter>Source Files\lab15-16</Filter>
+    </ClCompile>
+    <ClCompile Include="lab15-16.2_2.cpp">
+      <Filter>Source Files\lab15-16</Filter>
+    </ClCompile>
+    <ClCompile Include="lab15-16.2_3.cpp">
+      <Filter>Source Files\lab15-16</Filter>
+    </ClCompile>
+    <ClCompile Include="lab15-16.2_4.cpp">
+      <Filter>Source Files\lab15-16</Filter>
+    </ClCompile>
+    <ClCompile Include="lab15-16.3.cpp">
+      <Filter>Source Files\lab15-16</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
