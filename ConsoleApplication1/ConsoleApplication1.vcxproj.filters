@@ -216,5 +216,8 @@
     <ClCompile Include="lab15-16.3.cpp">
       <Filter>Source Files\lab15-16</Filter>
     </ClCompile>
+    <ClCompile Include="lab15-16_test.cpp">
+      <Filter>Source Files\lab15-16</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
