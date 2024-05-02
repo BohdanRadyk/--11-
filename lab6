@@ -1,0 +1,89 @@
+\\приклад№1
+#define PI 3.14159
+#include <stdio.h>
+main()
+{
+  int a = 5;
+  float b = 23.5;
+  int c = 31000;
+  printf("%d метрів тканини коштувало %f гривень \n", a, b);
+  printf("значення числа PI рівне %f.\n", PI);
+  printf("IBM сумсні комп'ютери набули широкого розповсюдження.\n ");
+  printf("%c%d\n", '$', c);
+}
+
+
+\\приклад №2
+#include <stdio.h>
+
+main()
+{
+    int z;
+    int w;
+    int x=1;
+    int y=2;
+    z=y+x;
+    w=y-x;
+}
+
+
+
+//приклад №3
+#include <stdio.h>
+int main()
+{
+  int vik;
+  char name[30];
+  printf("vash vik?\n");
+  scanf("%d", &vik);
+  printf("vvedit vashe imya\n");
+  scanf("%s", name);
+  printf("pryvit %s jakomy %d rokiv", name, vik);
+}
+
+
+
+приклад №4
+#include <stdio.h>
+main()
+{
+    printf("%d\n", 557);
+  printf("%o\n", 557);
+  printf("%x\n", 557);
+  printf("%d\n", -557);
+}
+
+
+\\приклад №5
+#include <stdio.h>
+main()
+{
+               printf("/%f/\n", 6543.12);
+  printf("/%e/\n", 6543.12);
+  printf("/%4.2f/\n", 6543.12);
+  printf("/%3.1f/\n", 6543.12);
+  printf("/%10.3f/\n", 6543.12);
+  printf("/%10.3e/\n", 6543.12);
+    
+}
+
+
+\\приклад №6
+#define STOP "*"
+#include <stdio.h>
+#include <conio.h>
+
+main()
+{
+  char ch;
+  ch = getchar();
+  ml:if (ch != STOP)
+  {
+    putchar(ch);
+    ch = getchar();
+    goto ml;
+  }
+}
+
+
+
