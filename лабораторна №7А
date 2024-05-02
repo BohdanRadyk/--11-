@@ -1,0 +1,71 @@
+\\приклад №1
+#include<stdio.h>
+
+int main() {
+  int n = 1;
+  printf("n=%d \n\n", n);
+  // n++; 
+  printf("prefix: ++n=%d\n\n", ++n);
+  printf("postfix: n++=%d\n\n", n++);
+  printf("after-postfix: n=%d\n\n", n);
+  // n--; 
+  printf("prefix: --n=%d\n\n", --n);
+  printf("postfix: n--=%d\n\n", n--);
+  printf("after-postfix: n=%d\n\n", n);
+}
+
+
+
+\\приклад №2
+#include <stdio.h> 
+#include <conio.h>
+
+
+int main()
+{
+  printf("числа типу int займають %d байт.\n",sizeof(int));
+  printf("числа типу char займають %d байт.\n",sizeof(char));
+  printf("числа типу float займають %d байт.\n",sizeof(float));
+  printf("числа типу double займають %d байт.\n",sizeof(double));
+
+}
+
+
+\\приклад №3
+#include<stdio.h>
+
+int main() 
+{
+
+  int n = 1, m = 1, res1, res2;
+  res1 = n ++*m;
+  printf("res1=%d\n", res1);
+  res2 = n++/m;
+  printf("res2=%d", res2);
+  return 0;
+}
+
+
+
+\\приклад №4
+#include <stdio.h>
+#include <conio.h>
+int main() 
+{
+    int a, b=3; 
+    float c;
+    c = b%2 + (a = ++b/2) + 1.1;
+    printf("a=%d,c=%4.1 f\n",a,c);
+}
+
+
+
+\\приклад №5
+#include <stdio.h>
+int main()
+{
+    int x=2,z;
+    float y = 2.1;
+    z = x++*y + y/x*3;
+    printf（"x=%d z=%d\n",x,z)；
+}
