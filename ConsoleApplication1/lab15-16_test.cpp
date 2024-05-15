@@ -3,8 +3,8 @@
 #include<string.h>
 #include<time.h>
 #include <stdlib.h>
-
-void vuvid(int a[][2], int b)
+#define c 3;
+void vuvid(int a[][c], int b)
 {
 	for (size_t i = 0; i < b; i++)
 	{

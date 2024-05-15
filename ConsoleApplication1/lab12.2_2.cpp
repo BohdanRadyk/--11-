@@ -2,7 +2,7 @@
 
 int main()
 {
-	int i = 2;
+	int i = 1;
 	while (i <= 1024)
 	{
 		i = i * 2;

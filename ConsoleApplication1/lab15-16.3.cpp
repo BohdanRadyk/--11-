@@ -15,7 +15,7 @@ int main()
 	}
 	for (size_t i = 0; i < 10; i++)
 	{
-		printf("%d", riadok[i]);
+		printf(" %d", riadok[i]);
 		sum += riadok[i];
 	}
 	printf("\nsum: %d", sum);

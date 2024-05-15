@@ -37,6 +37,15 @@
     <Filter Include="Source Files\lab15-16">
       <UniqueIdentifier>{97a40ac2-40b5-4149-b926-bfdc809f8ecf}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\lab 17">
+      <UniqueIdentifier>{3ab6f0bf-719d-4fdb-8058-4b1c3ea7dbc7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\lab 18">
+      <UniqueIdentifier>{813a8255-3030-4ef3-b25c-94f055933736}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\lab 19">
+      <UniqueIdentifier>{bbfab82a-f531-4295-bb83-45c7b63a7e8f}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="6_1.cpp">
@@ -218,6 +227,54 @@
     </ClCompile>
     <ClCompile Include="lab15-16_test.cpp">
       <Filter>Source Files\lab15-16</Filter>
+    </ClCompile>
+    <ClCompile Include="test123.cpp">
+      <Filter>Source Files\lab 17</Filter>
+    </ClCompile>
+    <ClCompile Include="22.cpp">
+      <Filter>Source Files\lab 17</Filter>
+    </ClCompile>
+    <ClCompile Include="lab18.1_1.cpp">
+      <Filter>Source Files\lab 18</Filter>
+    </ClCompile>
+    <ClCompile Include="lab18.1_2.cpp">
+      <Filter>Source Files\lab 18</Filter>
+    </ClCompile>
+    <ClCompile Include="lab18.1_3.cpp">
+      <Filter>Source Files\lab 18</Filter>
+    </ClCompile>
+    <ClCompile Include="lab18.2_1.cpp">
+      <Filter>Source Files\lab 18</Filter>
+    </ClCompile>
+    <ClCompile Include="lab19.1_1.cpp">
+      <Filter>Source Files\lab 19</Filter>
+    </ClCompile>
+    <ClCompile Include="lab19.1_2.cpp">
+      <Filter>Source Files\lab 19</Filter>
+    </ClCompile>
+    <ClCompile Include="lab19.1_3.cpp">
+      <Filter>Source Files\lab 19</Filter>
+    </ClCompile>
+    <ClCompile Include="lab19.1_4.cpp">
+      <Filter>Source Files\lab 19</Filter>
+    </ClCompile>
+    <ClCompile Include="lab19.3.cpp">
+      <Filter>Source Files\lab 19</Filter>
+    </ClCompile>
+    <ClCompile Include="lab19.4.cpp">
+      <Filter>Source Files\lab 19</Filter>
+    </ClCompile>
+    <ClCompile Include="lab17.1_1.cpp">
+      <Filter>Source Files\lab 17</Filter>
+    </ClCompile>
+    <ClCompile Include="lab17.1_2.cpp">
+      <Filter>Source Files\lab 17</Filter>
+    </ClCompile>
+    <ClCompile Include="lab17.2.cpp">
+      <Filter>Source Files\lab 17</Filter>
+    </ClCompile>
+    <ClCompile Include="lab17.3.cpp">
+      <Filter>Source Files\lab 17</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

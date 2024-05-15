@@ -11,7 +11,7 @@ void vuvid(char *riadok,int a)
 }
 int main()
 {
-	char riadok[100];
+	char riadok[1000];
 	int a;
 	printf("Vediti riadok:");
 	scanf("%s", &riadok);
