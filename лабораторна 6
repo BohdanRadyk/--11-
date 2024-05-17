@@ -1,0 +1,99 @@
+#include <stdio.h>
+int main() {
+    int z;
+    int w;
+    int x = 1;
+    int y = 2;
+    z = x + y;
+    w = y - x;
+    printf("z = %d, w = %d",z, w);
+}
+
+
+
+#define PI 3.14159
+#include<stdio.h>
+
+int main(){
+    int a = 5;
+    float b = 23.5;
+    int c = 31000;
+    printf("%d метрів тканини коштувало %.2f гривень\n",a,b);
+    printf("Значення числа PI %f\n", PI);
+    printf("IBM сумісні комп'ютери набули широкого розповсюдження.\n");
+    printf("%c%d",'&',c);
+    return 0;
+}
+
+
+#include<stdio.h>
+int main(){
+	printf("/%d/\n",557);
+	printf("/%10d/\n",557);
+	printf("/%-10d/\n",557);
+}
+
+
+
+#include <stdio.h>
+int main () {
+    printf("%8d/\n",21949);
+    printf("%8d/\n",-1611); 
+    printf("%8d/\n",-8380); 
+    printf("%8d/\n",2143);
+}
+
+
+
+
+
+#include<stdio.h>
+int main(){
+	printf("%d\n",557);
+	printf("%o\n",557);
+	printf("%x\n",557);
+	printf("%d\n",-557);
+}
+
+
+
+
+
+#include <stdio.h>
+#define riadok "Чудова погода" 
+int main() {
+    printf("%2s/\n", riadok);
+    printf("%15.s/\n", riadok);
+}
+
+
+
+#include<stdio.h>
+void main()
+{
+	int vik;
+	char name[30];
+	printf("Ваш вік?  ");
+	scanf("%d",&vik);
+	printf("Введіть ваше ім'я  ");
+	scanf("%s",&name);
+	printf("Привіт %s якому %d років",name,vik);
+}
+
+
+
+
+#include<stdio.h>
+#define STOP '*'
+
+int main() {
+    char ch;
+    ch = getchar();
+ml: 
+    if (ch != STOP) {
+        putchar(ch);
+        ch = getchar(); 
+        goto ml;
+    } 
+    return 0;
+}
