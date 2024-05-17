@@ -1,0 +1,91 @@
+#include<stdio.h>
+#include<math.h>
+int main (void)
+{
+    printf ("Аргумент: -612367.54783 \n");
+    printf ("fabs: %.5f \n", fabs (-612367.54783));
+    return 0;
+}
+
+
+
+#include <stdio.h>
+#include <math.h
+int main ()
+{
+printf ("Аргумент: 1.23 п");
+printf ("cosl: %.20Lf\n", cosl(1.23));
+printf ("cos: %.20f\n", cos (1.23));
+return 0;
+}
+
+
+
+#include <stdio.h>
+#include <math.h>
+int main ()
+{
+    printf ("Аргумент: 1.23 п");
+    printf ("cosl: %.20Lf\n", cosl(1.23));
+    printf ("cos: %.20f\n", cos (1.23));
+    return 0;
+}
+
+
+
+
+#include <stdio.h>
+#include <math.h>
+int main ()
+{
+    printf ("Аргументи: 2.6 13.45\n");
+    printf ("pow: %.20f\n", pow (2.6, 3.45));
+    printf ("powl: %.20Lfn", powl (2.6, 3.45));
+    return 0;
+}
+
+
+
+
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+   double a, b, c;
+   double D;
+   double x_1, x_2;
+   a = 1;
+   b = 3;
+   c = -4;
+   D = b * b - 4 * a * c;
+   x_1 = (-b + sqrt(D)) / (2 * a);
+   x_2 = (-b - sqrt(D)) / (2 * a);
+
+   printf("Перший корінь: %.2f\n", x_1);
+   printf("Другий корінь: %.2f\n", x_2);
+
+   return 0;
+}
+
+
+
+
+
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+    double z, x, result;
+
+    printf("Введіть значення змінної z: ");
+    scanf("%lf", &z);
+
+    printf("Введіть значення змінної x: ");
+    scanf("%lf", &x);
+
+    result = z + cos(x) + pow(sin(x) * cos(x), 2) + z;
+
+    printf("Результат: %lf\n", result);
+
+    return 0;
+}
