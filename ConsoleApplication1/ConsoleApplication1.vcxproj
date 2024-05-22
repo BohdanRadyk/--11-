@@ -316,6 +316,11 @@
     <ClCompile Include="lab17.3.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
+    <ClCompile Include="lab20.1.cpp" />
+    <ClCompile Include="lab20.2.cpp" />
+    <ClCompile Include="lab20.3.cpp" />
+    <ClCompile Include="lab20.4.cpp" />
+    <ClCompile Include="lab20.5.cpp" />
     <ClCompile Include="test123.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>

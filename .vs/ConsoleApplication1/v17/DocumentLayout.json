@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\Nazar\\source\\repos\\--11-\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{CC858A84-2AEE-4D74-839B-08AD394454C1}|ConsoleApplication1\\ConsoleApplication1.vcxproj|C:\\Users\\Nazar\\source\\repos\\--11-\\ConsoleApplication1\\lllll.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{CC858A84-2AEE-4D74-839B-08AD394454C1}|ConsoleApplication1\\ConsoleApplication1.vcxproj|solutionrelative:ConsoleApplication1\\lllll.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{CC858A84-2AEE-4D74-839B-08AD394454C1}|ConsoleApplication1\\ConsoleApplication1.vcxproj|C:\\Users\\Nazar\\source\\repos\\--11-\\ConsoleApplication1\\lab19.1_2.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{CC858A84-2AEE-4D74-839B-08AD394454C1}|ConsoleApplication1\\ConsoleApplication1.vcxproj|solutionrelative:ConsoleApplication1\\lab19.1_2.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
@@ -18,11 +22,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
+              "Title": "lllll.cpp",
+              "DocumentMoniker": "C:\\Users\\Nazar\\source\\repos\\--11-\\ConsoleApplication1\\lllll.cpp",
+              "RelativeDocumentMoniker": "ConsoleApplication1\\lllll.cpp",
+              "ToolTip": "C:\\Users\\Nazar\\source\\repos\\--11-\\ConsoleApplication1\\lllll.cpp",
+              "RelativeToolTip": "ConsoleApplication1\\lllll.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-05-16T08:53:49.669Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "lab19.1_1.cpp",
               "DocumentMoniker": "C:\\Users\\Nazar\\source\\repos\\--11-\\ConsoleApplication1\\lab19.1_1.cpp",
               "RelativeDocumentMoniker": "ConsoleApplication1\\lab19.1_1.cpp",
@@ -30,12 +47,11 @@
               "RelativeToolTip": "ConsoleApplication1\\lab19.1_1.cpp",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-05-15T14:08:51.472Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-15T14:08:51.472Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "lab19.1_2.cpp",
               "DocumentMoniker": "C:\\Users\\Nazar\\source\\repos\\--11-\\ConsoleApplication1\\lab19.1_2.cpp",
               "RelativeDocumentMoniker": "ConsoleApplication1\\lab19.1_2.cpp",
