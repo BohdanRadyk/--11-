@@ -1,0 +1,119 @@
+Приклад 1:
+#include <stdio.h>
+
+int main(void) {
+    struct {
+        int a;
+        int b;
+    } x, y; // Оголошення двох структур x і y
+    
+    x.a = 10; // Присвоєння значення полю 'a' структури x
+    y = x; // Присвоювання однієї структури іншій
+
+    printf("%d", y.a); // Виведення значення поля 'a' структури y
+
+    return 0; // Повернення нуля, що означає успішне завершення програми
+}
+
+Приклад 2:
+#include <stdio.h>
+
+/* визначення структури */
+struct student {
+    char name[30];
+    int kurs;
+    int age;
+};
+
+int main() {
+    /* оголошення змінної stud1 типу struct student */
+    struct student stud1;
+
+    /* Введення даних студента */
+    printf("Vvedit imya: ");
+    fgets(stud1.name, sizeof(stud1.name), stdin); // Використання fgets замість gets для безпеки
+
+    printf("Vvedit vik: ");
+    scanf("%d", &stud1.age);
+
+    printf("Vvedit kyrs: ");
+    scanf("%d", &stud1.kurs);
+
+    /* Виведення даних студента */
+    printf("Student: %s", stud1.name);
+    printf("Kyrs: %d\n", stud1.kurs); // Виправлення помилки в назві змінної
+    printf("Vik: %d\n", stud1.age);
+
+    return 0;
+}
+
+Приклад 3:
+#include <stdio.h>
+/* визначення структури*/ 
+struct student{
+char name[30];
+int kurs;
+int age;
+};
+int main()
+{
+/* оголошення масиву на 10 структур */
+struct student stud[10];
+int i, n;
+printf("Kilkict studentiv:");
+scanf("%d", &n);
+for(i=0;i<n;i++)
+{
+printf("Vvedit imya:");
+scanf("%s", stud[i].name);
+printf("Vvedit vik:");
+scanf("%d", &stud[i].age);
+printf("Vvedit kurs:"); 
+scanf("%d", &stud[i].kurs);
+}
+/* Виведення */
+for(i=0;i<n;i++)
+{
+printf("Student %s\n", stud[i].name);
+printf("Kurs %d\n", stud[i].kurs);
+printf("Vik %d\n", stud[i].age);
+}
+}
+
+Приклад 4(самому написати програму):
+#include <stdio.h>
+/* визначення структури*/ 
+struct employee{
+char name[30];
+int vaga;
+int vusota;
+int vik;
+};
+int main()
+{
+/* оголошення масиву на 10 структур */
+struct employee pracivnuk[10];
+int i, n;
+printf("Kilkict pracivnukiv:");
+scanf("%d", &n);
+for(i=0;i<n;i++)
+{
+printf("Vvedit imya:");
+scanf("%s", pracivnuk[i].name);
+printf("Vvedit vagu:");
+scanf("%d", &pracivnuk[i].vaga);
+printf("Vvedit vusoty:"); 
+scanf("%d", &pracivnuk[i].vusota);
+printf("Vvedit vik:"); 
+scanf("%d", &pracivnuk[i].vik);
+}
+/* Виведення */
+for(i=0;i<n;i++)
+{
+printf("Pracivnuk: %s\n", pracivnuk[i].name);
+printf("Vaga: %d\n", pracivnuk[i].vaga);
+printf("Vusota: %d\n", pracivnuk[i].vusota);
+printf("Vik: %d\n", pracivnuk[i].vik);
+}
+}
+

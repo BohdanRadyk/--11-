@@ -1,0 +1,199 @@
+Приклад 1:
+#include <stdio.h>
+
+int main() {
+    FILE *in; // File pointer
+    int ch;   // Variable to store characters
+
+    // Open the file for reading, check if it exists
+    if ((in = fopen("sample.txt", "r")) != NULL) {
+        // Read the file until the end
+        while ((ch = getc(in)) != EOF) {
+            // Output the character to the standard output (screen)
+            putc(ch, stdout);
+        }
+        // Close the file
+        fclose(in);
+    } else {
+        // Display an error message for file opening failure
+        printf("File 'sample' cannot be opened\n");
+    }
+
+    return 0; // Return zero, indicating successful program completion
+}
+
+
+Приклад 2:
+#include <stdio.h>
+
+int main() {
+    FILE *ff;
+    int base;
+    ff = fopen("sam.txt", "r"); // Open the file named "sam" which is identified by the pointer ff.
+ 
+    fscanf(ff, "%d", &base); // Read an integer from the file pointed to by ff.
+    fclose(ff); // Close the file.
+    
+    ff = fopen("data.txt", "a"); // Open the file "data" in append mode.
+    fprintf(ff, "sam is %d.\n", base); // Write "sam is <value of base>." to the file pointed to by ff.
+    fclose(ff); // Close the file.
+    
+    return 0;
+}
+
+Приклад 3:
+#include <stdio.h>
+#define LINE 80
+
+int main() {
+    FILE *ff;
+    char string[LINE]; // Array declaration changed
+    ff = fopen("opus.txt", "r");
+    if (ff == NULL) {
+        printf("Error opening file opus\n"); // Error message if the file opus cannot be opened
+        return 1;
+    }
+    while (fgets(string, LINE, ff) != NULL) {
+        printf("%s", string); // Print each line of the file to the screen
+    }
+    fclose(ff);
+    return 0;
+}
+
+Приклад 4:
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+    int f1, f2, f3, f4, f5;
+    FILE *fp;
+
+    // Open the file for reading
+    fp = fopen("sample_1.txt", "r");
+
+    if (fp == NULL) { // Check if the file was opened successfully
+        printf("Failed to open the file 'C:\\temp\\sample.txt' for reading.\n");
+        return 1; // Terminate the program with an error code
+    }
+
+    // Read formatted data from the file
+    fscanf(fp, "%d\n%d\n%d\n%d\n%d\n", &f1, &f2, &f3, &f4, &f5);
+
+    // Print the values read from the file
+    printf("The values are %d, %d, %d, %d, %d.\n", f1, f2, f3, f4, f5);
+
+    // Close the file
+    fclose(fp);
+
+    return 0; // Return zero, indicating successful program completion
+}
+
+Приклад 5:
+   -Write:
+#include <stdio.h>
+
+int main(void) {
+    FILE *pf;
+    int k;
+
+    // Open the file "proba.txt" for writing
+    if ((pf = fopen("proba.txt", "w")) == NULL) {
+        perror("proba.txt");
+        return 1;
+    }
+
+    // Write data to the file
+    for (k = 0; k <= 5; k++) {
+        fprintf(pf, "%d %d\n", k, k * k * k * k);
+    }
+
+    // Close the file
+    fclose(pf);
+
+    return 0;
+}
+  
+   -Read:
+#include <stdio.h>
+
+int main(void) {
+    FILE *pf;
+    int n, nn, i;
+
+    // Open the file "proba.txt" for reading
+    if ((pf = fopen("proba.txt", "r")) == NULL) {
+        perror("proba.txt");
+        return 1;
+    }
+
+    // Read data from the file
+    for (i = 0; i <= 5; i++) {
+        fscanf(pf, "%d %d", &n, &nn);
+        printf("Read values: %d, %d\n", n, nn); // Print read values for verification
+    }
+
+    // Close the file
+    fclose(pf);
+
+    return 0;
+}
+
+Приклад 6(індивідуальне завдання):
+   -Write:
+#include <stdio.h>
+
+int main() {
+    FILE *file;
+    int nums[8] = {1, 2, 3, 4, 5, 6, 7, 8}; // Array of 8 integers
+
+    // Open the file for writing
+    file = fopen("Variant_2.txt", "w");
+    if (file == NULL) {
+        perror("Failed to open file for writing");
+        return 1;
+    }
+
+    // Write the integers to the file
+    for (int i = 0; i < 8; i++) {
+        fprintf(file, "%d", nums[i]);
+    }
+
+    // Close the file
+    fclose(file);
+
+    return 0;
+}
+
+
+   -Read:
+#include <stdio.h>
+
+int main() {
+    FILE *file;
+    int nums[8];
+
+    // Open the file for reading
+    file = fopen("Variant_2.txt", "r");
+    if (file == NULL) {
+        perror("Failed to open file for reading");
+        return 1;
+    }
+
+    // Read the integers from the file into the array
+    for (int i = 0; i < 8; i++) {
+        fscanf(file, "%d", &nums[i]);
+    }
+
+    // Close the file
+    fclose(file);
+
+    // Print the array
+    printf("Array read from file:\n");
+    for (int i = 0; i < 8; i++) {
+        printf("%d ", nums[i]);
+    }
+    printf("\n");
+
+    return 0;
+}
+

@@ -1,0 +1,147 @@
+Приклад 1:
+#include<stdio.h>
+#include<math.h>
+#include<graphics.h>
+#include<conio.h>
+#include<dos.h>
+main(){
+	float a = 5;
+	int x = 0;
+	int grdrv=DETECT, grmod;
+	initgraph(&grdrv,&grmod, "C:\\TC\\BGI");
+	setbkcolor(BLACK);
+	setcolor(GREEN);
+	line(5,10,600,10);
+	line(5,460,600,460);
+	line(5,460,5,10);
+	line(600,460,600,10);
+	setcolor(WHITE);
+	line(5,getmaxy()/2,600,getmaxy()/2);
+	for(float i = 0; i<=3*M_PI;i+=0.1){
+		float b = sin(i);
+		a = a+(getmaxx()/91);
+		setcolor(RED);
+		line(a,getmaxy()/2,a,(getmaxy()/2)-(b*200));
+		delay(10);
+	}
+	getch();
+	closegraph();
+}
+
+Приклад 2:
+#include<stdio.h>
+#include<graphics.h>
+#include<conio.h>
+#include<windows.h>
+main(){
+	SetConsoleCP(65001);
+	SetConsoleOutputCP(65001);
+	char a[50];
+	int b=1;
+	int c = 0;
+	printf("Введіть текст  ");
+	scanf("%s",&a);
+	printf("Введіть множник розміру тексту  ");
+	scanf("%d",&b);
+	printf("Введіть стиль тексту  ");
+	scanf("%d",&c);
+	int grdrv=DETECT, grmod;
+	initgraph(&grdrv,&grmod, "C:\\TC\\BGI");
+	setbkcolor(BLACK);
+	setcolor(RED);
+	settextstyle(c, 0, b);
+	outtextxy(100,100, a);
+	getch();
+	closegraph();
+}
+
+Приклад 3:
+#include <graphics.h>  
+#include <conio.h>
+int main() {
+    int gd = DETECT, gm;  
+    initgraph(&gd, &gm, "");  
+    int x = getmaxx()/2, y = getmaxy()/2;
+    int dx = 1, dy = 1, r = 15; 
+    while (!kbhit()) {
+        cleardevice();  
+        int color = RED;
+        circle(x, y, r); 
+        x += dx; 
+        y += dy;  
+        delay(2);  
+        if (x <= r || x >= getmaxx()-r) {
+            dx = -dx;
+            color = WHITE;
+            setcolor(color);
+        }
+        if (y <= r || y >= getmaxy()-r) {
+            dy = -dy; 
+            color= RED;
+            setcolor(color);  
+        }
+    }
+    closegraph();  // Закриття графічного вікна
+        return 0;  
+}
+
+Приклад 4:
+#include <graphics.h>
+#include <conio.h>
+main(){
+	int xr=100;
+	int gd = DETECT, gm; 
+    initgraph(&gd, &gm, "");
+    setcolor(RED);
+    while (!kbhit()) {
+        for (xr = 100; xr >= 0; xr-=2) {
+        	cleardevice();
+        	fillellipse(getmaxx()/2, getmaxy()/2, xr, 100);
+			delay(20);
+        }
+        for (xr = 0; xr <= 100; xr+=2) {
+        	cleardevice();
+        	fillellipse(getmaxx()/2, getmaxy()/2, xr, 100);
+			delay(20);
+        }
+	}
+	closegraph();
+}
+
+Приклад 5:
+#include<graphics.h> // Підключення графічної бібліотеки
+#include<conio.h> // Підключення бібліотеки для роботи з консоллю
+#include<math.h> // Підключення бібліотеки для математичних операцій
+
+main() { // Головна функція
+  int grdrv=DETECT, grmod,size; // Ініціалізація змінних для графічного режиму та розміру
+  initgraph(&grdrv,&grmod, "C:\\TC\\BGI"); // Ініціалізація графічного режиму
+  setbkcolor(CYAN); // Встановлення коліру фону
+  int x=0,y=getmaxy()*4/5-10; // Ініціалізація координат
+  void *buf; // Вказівник для збереження зображення
+  cleardevice(); // Очищення графічного вікна
+  setcolor(BLUE); // Встановлення кольору
+  setfillstyle(SOLID_FILL, BLUE); // Встановлення стилю заливки
+  bar(0,getmaxy()*4/5,getmaxx()+1,getmaxy()+1); // Намальовання прямокутника
+  setcolor(DARKGRAY); // Встановлення кольору
+  setfillstyle(SOLID_FILL, DARKGRAY); // Встановлення стилю заливки
+  int base[] = {x, y, x + 100, y, x + 80, y+20, x + 20, y+20}; // Масив координат для малювання прямокутника
+  fillpoly(4, base); // Заповнення прямокутника
+  setcolor(BLACK); // Встановлення кольору
+  setfillstyle(SOLID_FILL, WHITE); // Встановлення стилю заливки
+  arc(50,getmaxy()*4/5-50,-90,90,30); // Малювання дуги
+  arc(20,getmaxy()*4/5-50,-90,90,30); // Малювання дуги
+  line(20,getmaxy()*4/5-80,50,getmaxy()*4/5-80); // Малювання лінії
+  line(20,getmaxy()*4/5-20,50,getmaxy()*4/5-20); // Малювання лінії
+  line(55,getmaxy()*4/5-50,55,getmaxy()*4/5); // Малювання лінії
+  floodfill(60,getmaxy()*4/5-50 , BLACK); // Заливка області
+  buf=malloc(size); // Виділення пам'яті для збереження зображення
+  getimage(0,getmaxy()*4/5-90,110,getmaxy()*4/5+20, buf); // Збереження зображення
+  setfillstyle(1, CYAN); // Встановлення стилю заливки
+  for(int i=1;i<=getmaxx();i++){ // Цикл для анімації
+    bar(i - 1,getmaxy()*4/5-90,110,getmaxy()*4/5); // Намальовання прямокутника
+    putimage(i, getmaxy()*4/5-90, buf, COPY_PUT); // Відтворення зображення
+    delay(10); // Затримка
+  }
+  closegraph(); // Закриття графічного вікна
+}

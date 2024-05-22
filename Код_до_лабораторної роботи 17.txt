@@ -1,0 +1,110 @@
+Приклад 1:
+#include <stdio.h> 
+int main(void){
+int x = 99;
+int *p1, *p2; p1=&x;
+p2=p1;
+/* друк значення х два рази */
+printf("Znachennya po adresi p1 i p2: %d %d\n", *p1, *p2);
+printf("Znachennya vkazivnukiv p1 i p2: %p %p", p1, p2);
+return 0;
+}
+
+Приклад 2:
+#include <stdio.h>
+#include <stdlib.h>
+#define SIZE 5
+void push(int i);
+int pop(void);
+
+int *tos, *p1, stack[SIZE];
+int value;
+
+int main(void) {
+    tos = stack; /* tos посилається на основу стеку */
+    p1 = stack;  /* ініціалізація p1 */
+
+    do {
+        printf("Введіть значення: ");
+        scanf("%d", &value);
+
+        if (value != 0)
+            push(value);
+        else
+            printf("Значення на вершині рівне %d\n", pop());
+
+    } while (value != -1);
+
+    return 0;
+}
+
+void push(int i) {
+    p1++;
+    if (p1 == (tos + SIZE)) {
+        printf("Переповнення стеку.\n");
+        exit(1);
+    }
+    *p1 = i;
+}
+
+int pop(void) {
+    if (p1 == tos) {
+        printf("Стек пустий.\n");
+        exit(1);
+    }
+    p1--;
+    return *(p1 + 1);
+}
+
+Приклад 3(самому написати програму):
+#include <stdio.h>
+int main() {
+    int first_mas[5], i, sum_mas = 0;
+    int *f_s = first_mas; // вказівник на перший елемент масиву
+    
+    for (i = 0; i < 5; i++) {
+        printf("Введіть число для %d елементу масива:\n", i);
+        scanf("%d", f_s + i); // використання вказівника для зберігання значення
+    }
+
+    printf("Масив складається з таких чисел - [");
+    for (i = 0; i < 5; i++) {
+        printf("%5d;", *(f_s + i)); // використання вказівника для доступу до елементу
+        sum_mas += *(f_s + i);
+    }
+    printf("  ]\n");
+
+    printf("Сума всіх елементів масиву:\n%d\n", sum_mas);
+
+    return 0;
+}
+
+Приклад 4(індивідуальне завдання):
+#include <stdio.h>
+
+// Функція для знаходження суми додатних чисел масиву
+// Параметри:
+// - arr: масив дійсних чисел
+// - size: розмірність масиву
+double sum_positive_numbers(double arr[], int size) {
+    double sum = 0.0; // Ініціалізація змінної для зберігання суми
+    for (int i = 0; i < size; i++) { // Прохід по всіх елементах масиву
+        if (arr[i] > 0) { // Перевірка, чи є елемент додатним
+            sum += arr[i]; // Додавання додатного елемента до суми
+        }
+    }
+    return sum; // Повернення суми додатних чисел
+}
+
+int main() {
+    // Опис масиву дійсних чисел розмірністю 12 елементів
+    double array[12] = {3.5, -2.1, 4.0, 0.0, 5.6, -7.8, 2.3, -3.3, 8.2, -1.1, 9.0, -6.5};
+    
+    // Виклик функції для знаходження суми додатних чисел масиву
+    double sum = sum_positive_numbers(array, 12);
+    
+    // Виведення суми додатних чисел масиву на екран
+    printf("Сума додатних чисел масиву: %.2f\n", sum);
+    
+    return 0; // Повернення нуля, що означає успішне завершення програми
+}

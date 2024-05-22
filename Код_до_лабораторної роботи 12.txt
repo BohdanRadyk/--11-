@@ -1,0 +1,180 @@
+Приклад 1:
+#include <stdio.h> 
+int main (void)
+{
+int x;
+for (x = 1; x <= 100; x++) printf("%d",x);
+return 0;
+}
+
+Приклад 2:
+#include<stdio.h>
+int main(){
+int i=2;
+while (i<=1024){
+    i = i*2;
+    printf("%d\n",i);
+}
+}
+
+Приклад 3:
+#include<stdio.h>
+int main(){
+int j=0,k=0;
+while(j<5){
+    k+=10;
+    j++;
+}
+printf("k=%d\n",k);
+}
+
+Приклад 4:
+#include<stdio.h>
+int main(){
+int a=2, b=10,c;
+    do
+    {
+        b=b+a; c=10*a; a++;
+    }
+while(a<5);
+printf("\nb=%d c=%d a=%d",b,c,a);
+}
+
+Приклад 5:
+#include<stdio.h>
+#include<stdlib.h>
+int main(void){
+int magic;
+int guess; 
+magic=rand();
+printf("vgaday chuslo:"); 
+scanf("%d",&guess); 
+if(guess == magic){ 
+    printf("**virno**");
+    printf("magichne chuslo rivne %d",magic);
+}
+else {
+    printf("nevirno\n");
+    while (guess!=magic){ 
+        printf("vgaday chuslo:");
+        scanf("%d",&guess);
+        printf("nevirno\n");
+    }  
+}
+}
+
+Приклад 6:
+#include<stdio.h>
+#include<stdlib.h>
+int main(void){
+int magic;
+int guess;
+int m=1;
+magic=rand();
+printf("vgaday chuslo:");
+scanf("%d",&guess);
+if(guess == magic){
+printf("**virno**");
+printf("magichne chuslo rivne %d",magic);
+}
+else {
+    printf("nevirno\n");
+    printf("m=%d\n",m);
+    while (guess!=magic){
+        m++;
+        printf("vgaday chuslo:"); 
+        scanf("%d",&guess); 
+        printf("nevirno\n");
+        printf("m=%d\n",m);
+    }
+}
+}
+
+Приклад 7:
+#include <stdio.h>
+#include <stdlib.h>
+int main(void){
+int magic;
+int guess;
+int m=1; /*кількість спроб*/ 
+magic=rand();
+printf("vgaday chuslo:"); 
+scanf("%d",&guess);
+if(guess == magic){ 
+    printf("**virno**");
+    printf("magichne chuslo rivne %d", magic);
+}
+else {
+    printf("nevirno\n");
+    printf("m=%d\n",m); 
+    while (guess!=magic){
+        m++;
+        printf("vgaday chuslo:"); 
+        scanf("%d", &guess); 
+        printf("nevirno\n");
+        printf("m=%d\n",m);
+        if(m>9){
+            printf("magic=%d\n", magic);
+            break;
+        }
+    }
+}
+}
+
+Приклад 8:
+/* Celsius and Fahrengeit */ /* C=(5/9)*(F-32) */ 
+#include<stdio.h>
+#include<conio.h>
+int main(){
+int fahr,celsius;
+int lower, upper,step; 
+lower=0;
+upper=300;
+step=20;
+fahr=lower;
+printf("\n\nCelsius Fahrengeit\n");
+while(fahr <= upper){
+    celsius = 5*(fahr-32)/9;
+    printf("%10d\t%8d\n", fahr,celsius); 
+    fahr=fahr+step;
+}
+getch();
+}
+
+Приклад 9(програма для побудови прямокутного трикутника з "*"):
+#include<stdio.h>
+#include<conio.h>
+int main(){
+int n,i,j;
+char zirochka;
+printf("Введіть розмір прямокутного трикутника(висота = ширині):\n");
+scanf("%d",&n);
+for(i = 1; i<=n; i++){ 
+    printf("\n");
+    for(j=1; j<=i; j++){
+        zirochka = '*';
+        printf("%c",zirochka);
+    }
+}
+}
+
+Приклад 10(програма для побудови рівнобедреного трикутника з "*"):
+#include<stdio.h>
+#include<conio.h>
+int main(){
+int n,i,j,k; // i,y,k -- це просто лічильники
+char zirochka;
+printf("Введіть розмір прямокутного трикутника(висота = ширині):\n");
+scanf("%d",&n);
+for(i = 1; i<=n; i++){ 
+    printf("\n");
+    for (k = i; k < n; k++) {
+        printf(" ");
+    }
+    for(j=1; j<=(2*i-1); j++){
+        zirochka = '*';
+        printf("%c",zirochka);
+    }
+}
+}
+

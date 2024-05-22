@@ -1,0 +1,212 @@
+Приклад 1:
+/* Магічне число */ 
+#include <stdio.h>
+#include <stdlib.h>
+int main()
+{
+int magic; /* магічне число */
+int guess; /* спроба гравця */
+magic=rand(); /* генерація магічного числа */
+printf("Vgaday magichne chuslo: ");
+scanf("%d", &guess);
+if(guess == magic) {
+    printf("** Virno **"); 
+}
+else{
+    printf("Vu Nevgadalu chuslo!!!");
+}
+return 0;
+}
+
+Приклад 2:
+/* Магічне число 2*/ 
+#include <stdio.h> 
+#include <stdlib.h>
+int main(void)
+{
+int magic;
+int guess;
+magic = rand();
+printf("Vgaday magichne chuslo: ");
+scanf("%d", &guess);
+if(guess == magic) printf("** Virno **"); 
+else printf("Nevirno");
+return 0;
+}
+
+Приклад 3:
+/* Магічне число 3*/ 
+#include <stdio.h>
+#include <stdlib.h>
+int main(void)
+{
+int magic;
+int guess;
+magic = rand();
+printf("Vgaday magichne chuslo: "); 
+scanf("%d", &guess);
+if (guess == magic) {
+   printf("** Virno **");
+   printf("Magichne chuslo rivne %d\n", magic);
+}
+else {
+printf("** Nevirno, ");
+}
+if(guess > magic) printf("zanabto veluke\n");
+/* вкладений if*/
+else printf("zanabto male\n");
+return 0;
+}
+
+Приклад 4:
+/* Магічне число, програма 4 */
+#include <stdio.h>
+#include <stdlib.h>
+int main(void)
+{
+int magic;
+int guess;
+magic = rand();
+printf("Vgaday magichne chyslo: ");
+scanf("%d", &guess);
+if(guess == magic) {
+printf("** Virno ** ");
+printf("Magichne chyslo rivne %d\n", magic);
+}
+else if(guess > magic)
+ printf("Nevirno, zanabto veluke");
+
+else printf("Nevirno, zanabto male"); 
+return 0;
+}
+
+Приклад 5:
+#include <stdio.h> 
+int main(void)
+{
+int t;
+for(t=0; t<100; t++) {
+printf("%d", t);
+if(t==10) break;
+}
+return 0;
+}
+
+Приклад 6:
+/* Підрахунок кількості пробілів */ 
+#include <stdio.h>
+int main(void)
+{
+char s[80], *str;
+int space;
+printf("Vvedit riadok: \n");
+gets(s);
+str = s;
+for(space=0; *str; str++) {
+if(*str != ' ') continue;
+   space++;
+}
+printf("%d probiliv\n", space);
+return 0;
+}
+
+Приклад 7:
+#include <stdio.h> 
+#include <conio.h> 
+
+void main() {
+    int a = 2, b = 0, c = 1;  // Оголошення та ініціалізація змінних a, b і c
+    printf("\n\n");  // Друк двох нових рядків для відступу
+
+    if (a > 0 && b < -3)  // Перевірка умови: чи a більше 0 та b менше -3
+        c = b * b / a;  // Якщо умова виконується, змінити значення c
+    printf("c=%d\n", c);  // Друк поточного значення c; результат: c=1
+
+    a = ++c / a + a % c;  // Інкрементування c, потім оновлення a за допомогою виразу
+    b += c * c;  // Оновлення b додаванням квадрата c
+    if (a < b || a < 0) {  // Перевірка умови: чи a менше b або a менше 0
+        c *= a;  // Якщо умова виконується, змінити значення c шляхом множення на a
+        printf("c=%d\n", c);  // Друк поточного значення c; результат: c=2
+    } else if (c++ == 2) {  // Перевірка умови: чи c дорівнює 2, потім інкрементування c
+        printf("c=%d\n", c);  // Якщо умова виконується, друк значення c (це не виконується)
+    }
+
+    if (b < a && a == 2)  // Перевірка умови: чи b менше a та a дорівнює 2
+        c = 2 * a + 1;  // Якщо умова виконується, змінити значення c
+    else {  // Якщо умова не виконується
+        c = (b--) + a;  // Змінити значення c і зменшити b на 1 після виразу
+        a = 0;  // Змінити значення a на 0
+    }
+    printf("c=%d\n", c);  // Друк поточного значення c; результат: c=5
+
+    a = b = 2;  // Змінити значення a і b на 2
+    if (c = 3)  // Присвоєння c значення 3, потім перевірка, чи це істинно
+        if (a < 0 || a > c)  // Перевірка умови: чи a менше 0 або a більше c
+            c = 0;  // Якщо умова виконується, змінити значення c
+        else {  // Якщо умова не виконується
+            a = 1;  // Змінити значення a на 1
+            c = 7;  // Змінити значення c на 7
+            printf("c=%d\n", c);  // Друк поточного значення c; результат: c=7
+        }
+
+    if (c > 0 && c < 10) {  // Перевірка умови: чи c більше 0 і менше 10
+        if (a > 0)  // Перевірка умови: чи a більше 0
+            printf("c=%d\n", c++);  // Друк поточного значення c і інкрементування c після цього; результат: c=7
+    } else {  // Якщо умова не виконується
+        c = 10;  // Змінити значення c на 10
+    }
+
+    if (c <= 5)  // Перевірка умови: чи c менше або дорівнює 5
+        if ((a = b + 1) > 2)  // Присвоєння a значення b+1, потім перевірка, чи a більше 2
+            c %= 2;  // Якщо умова виконується, оновити c за допомогою залишку від ділення на 2
+    printf("c=%d\n", c);  // Друк поточного значення c; результат: c=8
+
+    a = 3;  // Змінити значення a на 3
+    b = -1;  // Змінити значення b на -1
+    if (b > 0)  // Перевірка умови: чи b більше 0
+        c = 1;  // Якщо умова виконується, змінити значення c
+    else if (b < -10) {  // Якщо умова не виконується, перевірка: чи b менше -10
+        c = -1;  // Якщо умова виконується, змінити значення c
+        printf("c=%d\n", c);  // Друк поточного значення c (це не виконується)
+    } else if (b <= -3)  // Перевірка умови: чи b менше або дорівнює -3
+        c = 2;  // Якщо умова виконується, змінити значення c
+    else  // Якщо жодна з попередніх умов не виконується
+        c = b * b + 10;  // Змінити значення c на b в квадраті плюс 10
+    printf("c=%d\n", c);  // Друк поточного значення c; результат: c=11
+
+    getch();  // Очікування натискання клавіші
+}
+
+
+Індивідуальне завдання(самому написати програму):
+#include <stdio.h>
+int main(){
+    int a, b;
+    char znak;
+    int c;
+    printf("Введіть ціле значення числа а:\n");
+    scanf("%d", &a);
+    printf("Введіть ціле значення числа b:\n");
+    scanf("%d", &b);
+    printf("Введіть знак арифметичної операції,який буде стояти між двома числами а і b:\n");
+    scanf(" %c", &znak);
+    if(znak == '+'){
+        c = a+b;
+        printf("a + b = %d",c);
+    }
+    else if(znak == '-'){
+        c = a-b;
+        printf("a - b = %d",c);
+    }
+    else if(znak == '*'){
+        c = a*b;
+        printf("a * b = %d",c);
+    }
+    else if(znak == '/'){
+        if(b != 0){
+            c = a/b;
+            printf("a / b = %d",c);
+        }else printf("На нуль ділити не можна!!!");
+    }else printf("Ви ввели невідомий арифметичний знак!!!!");
+}
+
