@@ -1,0 +1,149 @@
+#include <stdio.h>
+#include <string.h>
+
+int main(void) {
+    char s1[80], s2[80];
+    fgets(s1, sizeof(s1), stdin);
+    fgets(s2, sizeof(s2), stdin);
+    s1[strcspn(s1, "\n")] = '\0';
+    s2[strcspn(s2, "\n")] = '\0';
+    printf("Довжина: %lu %lu\n", strlen(s1), strlen(s2));
+    if (!strcmp(s1, s2))
+        printf("Рядки рівні\n");
+    strcat(s1, s2);
+    printf("%s\n", s1);
+    strcpy(s1, "Перевірка.\n");
+    printf("%s", s1);
+    return 0;
+}
+
+
+
+
+
+
+
+
+
+#include<stdio.h>
+
+int main(void) {
+    int x[100];
+    int t;
+    for (t = 0; t < 100; ++t)
+        x[t] = t;
+    for (t = 0; t < 100; ++t)
+        printf("%d ", x[t]);
+    return 0;
+}
+
+
+
+
+
+
+
+
+#include<stdio.h>
+
+int main(void) {
+    int t, i, num[3][4];
+    for(t = 0; t < 3; ++t)
+        for(i = 0; i < 4; ++i)
+            num[t][i] = (t * 4) + i + 1;
+    for(t = 0; t < 3; ++t) {
+        for(i = 0; i < 4; ++i)
+            printf("%03d ", num[t][i]);
+        printf("\n");
+    }
+    return 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+#include<stdio.h>
+
+#define MAX 100
+#define LEN 80
+
+char text[MAX][LEN];
+
+int main(void) {
+    int t, i, j;
+    printf("Для виходу введіть пустий рядок.\n");
+    for (t = 0; t < MAX; t++) {
+        printf("%d: ", t);
+        if (fgets(text[t], LEN, stdin) == NULL || text[t][0] == '\n') // Перевірка на кінець введення або на пустий рядок
+            break;
+
+        for (j = 0; text[t][j] != '\0'; j++) {
+            if (text[t][j] == '\n') {
+                text[t][j] = '\0';
+                break;
+            }
+        }
+    }
+    for (i = 0; i < t; i++) {
+        for (j = 0; text[i][j]; j++)
+            putchar(text[i][j]);
+        putchar('\n');
+    }
+    return 0;
+}
+
+
+
+
+
+
+
+
+
+#include <stdio.h>
+
+#define SIZE 10
+
+int main() {
+    int arr[SIZE];
+    int sum = 0;
+
+    // Заповнення масиву
+    printf("Введіть %d цілих чисел:\n", SIZE);
+    for (int i = 0; i < SIZE; i++) {
+        printf("Елемент %d: ", i + 1);
+        scanf("%d", &arr[i]);
+    }
+
+    // Обчислення суми елементів масиву
+    for (int i = 0; i < SIZE; i++) {
+        sum += arr[i];
+    }
+
+    // Виведення масиву
+    printf("\nМасив: ");
+    for (int i = 0; i < SIZE; i++) {
+        printf("%d ", arr[i]);
+    }
+
+    // Виведення суми елементів масиву
+    printf("\nСума елементів масиву: %d\n", sum);
+
+    return 0;
+}
+
+
+
+
+
+
+
+
+
