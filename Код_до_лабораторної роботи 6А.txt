@@ -1,0 +1,307 @@
+Приклад 1:
+/* друк різноманітної інформації*/
+#define PI 3.14159
+#include <stdio.h>
+int main(){
+int a =5;
+float b=23.5;
+int c=31000;
+printf("%d метрів тканини коштувало %f гривень.\n", a,b);
+printf("Значення числа рі рівне %f.\n", PI);
+printf(" ІВМ сумісні комп'ютери набули широкого розповсюдження.\n");
+printf("%c%d\n", '$', c);
+}
+
+Приклад 2:
+#include <stdio.h>
+int main() {
+printf("%d\n", 557);
+printf("%2d\n", 557);
+printf("%10d\n", 557);
+printf("%-10d\n", 557);
+}
+
+Приклад 3:
+#include <stdio.h>
+int main()
+{
+    printf("%f/\n", 6543.21);
+    printf("%e/\n", 6543.21); 
+    printf("/%4.2f/\n", 6543.21); 
+    printf("%3.1f/\n", 6543.21); 
+    printf("%10.3f/\n", 6543.21); 
+    printf("/%10.3e/\n", 6543.21); 
+    return 0;
+}
+
+Приклад 4:
+#include <stdio.h>
+#define riadok "Чудова погода"
+int main() {
+    printf("%2s/\n", riadok);       
+    printf("%15s/\n", riadok);       
+    printf("%15.5s/\n", riadok);     
+    printf("%-15.5s/\n", riadok);   
+    return 0;
+}
+
+Приклад 5:
+#include <stdio.h>
+int main()
+{
+    printf("%d\n", 557);  
+    printf("%o\n", 557);  
+    printf("%x\n", 557); 
+    printf("%d\n", -557); 
+    printf("%u\n", (unsigned int)-557); 
+    return 0;
+}
+
+Приклад 6:
+#include <stdio.h>
+int main()
+{
+    int vik;
+    char name[30];
+    printf("Vash vik?\n");
+    scanf("%d", &vik);
+    printf("Uvedit vashe imja\n");
+    scanf("%s", name);
+    printf("Pryvit %s, yakomu %d rokiv\n", name, vik);
+    return 0;
+}
+
+Приклад 7:
+#include <stdio.h>
+#define STOP '*'
+int main()
+{
+    char ch;
+    ch = getchar();
+    while (ch != STOP)
+    {
+        putchar(ch);
+        ch = getchar();
+    }
+    return 0;
+}
+
+Приклад 8(самому написати програму):
+#include <stdio.h>
+
+int main() {
+    // Задання змінних різних типів
+    int i = 42;
+    float f = 3.14159;
+    char c = 'A';
+    long l = 1234567890L;
+
+    // Виведення змінних з різними модифікаторами специфікації перетворення
+
+    // Виведення типу int
+    printf("Integer (%%d): %d\n", i);
+    printf("Integer (%%5d): %5d\n", i);  // Ширина поля 5
+    printf("Integer (%%05d): %05d\n", i); // Ширина поля 5, заповнення нулями
+
+    // Виведення типу float
+    printf("Float (%%f): %f\n", f);
+    printf("Float (%%.2f): %.2f\n", f);  // Два знаки після коми
+    printf("Float (%%8.2f): %8.2f\n", f); // Ширина поля 8, два знаки після коми
+
+    // Виведення типу char
+    printf("Character (%%c): %c\n", c);
+    printf("Character (%%3c): %3c\n", c); // Ширина поля 3
+
+    // Виведення типу long
+    printf("Long (%%ld): %ld\n", l);
+    printf("Long (%%10ld): %10ld\n", l); // Ширина поля 10
+
+    return 0;
+}
+
+Приклад 9(самому написати програму):
+#include <stdio.h>
+
+int main() {
+    // Масив з 10 символів ASCII
+    char symbols[10] = {'A', 'b', '3', '!', '@', 'Z', 'z', '0', '9', '#'};
+
+    // Виведення заголовку таблиці
+    printf("Symbol  Decimal  Octal  Hexadecimal\n");
+    printf("------  -------  -----  -----------\n");
+
+    // Цикл для виведення кожного символу і його коду в різних системах числення
+    for (int i = 0; i < 10; i++) {
+        char symbol = symbols[i];
+        printf("  %c      %3d      %03o      %02X\n", symbol, symbol, symbol, symbol);
+    }
+
+    return 0;
+}
+
+Приклад 10(самому написати програму):
+#include <stdio.h>
+int main() {
+    float price;
+    int quantity; 
+    float total_cost; 
+    printf("Введіть ціну одиниці товару: ");
+    scanf("%f", &price);
+    printf("Введіть кількість товару: ");
+    scanf("%d", &quantity);
+    total_cost = price * quantity;
+    printf("Вартість купівлі: %.2f\n", total_cost);
+    return 0;
+}
+
+Приклад 11(самому написати програму):
+#include <stdio.h>
+int main() {
+    float prices[5]; 
+    int quantities[5]; 
+    float total_cost = 0; 
+    printf("Введіть ціни та кількості для 5 товарів:\n");
+    for (int i = 0; i < 5; i++) {
+        printf("Товар %d: ", i + 1);
+        scanf("%f %d", &prices[i], &quantities[i]);
+    }
+    for (int i = 0; i < 5; i++) {
+        total_cost += prices[i] * quantities[i];
+    }
+    printf("Загальна вартість купівлі: %.2f\n", total_cost);
+    return 0;
+}
+
+Приклад 12(самому написати програму):
+#include <stdio.h>
+int main() {
+    float prices[] = {14, 24.75, 15.6, 12.4, 11.9}; 
+    int quantities[] = {3, 2, 4, 1, 5};
+    float total_costs[5];
+    for (int i = 0; i < 5; i++) {
+        total_costs[i] = prices[i] * quantities[i];
+    }
+    printf("Товар\t\tЦіна\t\tКількість\tВартість купівлі\n");
+    for (int i = 0; i < 5; i++) {
+        printf("%d\t\t%.2f\t\t%d\t\t%.2f\n", i+1, prices[i], quantities[i], total_costs[i]);
+    }
+    return 0;
+}
+
+Приклад 13(самому написати програму):
+#include <stdio.h>
+int main() {
+    float r, C, S;
+    printf("Введіть радіус кола:\n");
+    scanf("%f", &r); 
+    C = 2 * 3.14 * r;
+    S = 3.14 * r * r;
+    printf("Довжина кола: %.2f\n", C);
+    printf("Площа круга: %.2f\n", S); 
+    return 0;
+}
+
+Приклад 14(самому написати програму):
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+    double a, b, c;
+    double discriminant, root1, root2, realPart, imaginaryPart;
+
+    // Введення коефіцієнтів
+    printf("Введіть коефіцієнти a, b і c для квадратного рівняння ax^2 + bx + c = 0:\n");
+    printf("a = ");
+    scanf("%lf", &a);
+    printf("b = ");
+    scanf("%lf", &b);
+    printf("c = ");
+    scanf("%lf", &c);
+
+    // Обчислення дискримінанта
+    discriminant = b * b - 4 * a * c;
+
+    // Перевірка дискримінанта і обчислення коренів
+    if (discriminant > 0) {
+        // Два дійсних кореня
+        root1 = (-b + sqrt(discriminant)) / (2 * a);
+        root2 = (-b - sqrt(discriminant)) / (2 * a);
+        printf("Корені рівняння є дійсними і різними:\n");
+        printf("root1 = %.2lf\n", root1);
+        printf("root2 = %.2lf\n", root2);
+    } else if (discriminant == 0) {
+        // Один дійсний корінь
+        root1 = -b / (2 * a);
+        printf("Корінь рівняння є дійсним і одинарним:\n");
+        printf("root1 = %.2lf\n", root1);
+    } else {
+        // Уявні корені
+        realPart = -b / (2 * a);
+        imaginaryPart = sqrt(-discriminant) / (2 * a);
+        printf("Корені рівняння є уявними і різними:\n");
+        printf("root1 = %.2lf + %.2lfi\n", realPart, imaginaryPart);
+        printf("root2 = %.2lf - %.2lfi\n", realPart, imaginaryPart);
+    }
+
+    return 0;
+}
+
+Приклад 15(самому написати програму):
+#include <stdio.h>
+#include <stdio.h>
+#include <stdlib.h>
+#define STOP '*' 
+void sound(int frequency) {
+    printf("\a"); 
+}
+
+int main() {
+    char ch;
+    ch = getchar();
+    while (ch != STOP) {
+        putchar(ch);
+        ch = getchar();
+    }
+    sound(1000);
+    printf("\nZvyukovyy syhnal otrymav, zavershennya prohramy.\n");
+    return 0;
+}
+
+Приклад 16(самому написати програму):
+#include <stdio.h>
+#include <math.h>
+double distance(double x1, double y1, double x2, double y2) {
+    return sqrt(pow(x2 - x1, 2) + pow(y2 - y1, 2));
+}
+int main() {
+    int k;
+    printf("Введіть значення k: ");
+    scanf("%d", &k);
+    double x1 = 1, y1 = 1;
+    double x2 = 2*k, y2 = 2*k-1;
+    double x3 = -2*k, y3 = k+2;
+    double a = distance(x1, y1, x2, y2);
+    double b = distance(x2, y2, x3, y3);
+    double c = distance(x1, y1, x3, y3);
+    double p = (a + b + c) / 2;
+    double S = sqrt(p * (p - a) * (p - b) * (p - c));
+    double r = S / p;
+    printf("Периметр: %.2f\n", 2 * p);
+    printf("Площа: %.2f\n", S);
+    printf("Радіус вписаного кола: %.2f\n", r);
+    return 0;
+}
+
+Приклад 17(Індивідуальне завдання):
+#include <stdio.h>
+#include <math.h>
+int main() {
+ int a = 1000;
+ float b =0.0001;
+ float c,d,e;
+ c = a-b;
+ d = pow(c,3) - pow(a,3);
+ e = pow(b,3) - 3*a*pow(b,2) - 3*pow(a,2)*b;
+ printf("Результат: %.2f", d/e);
+}
+
