@@ -1,0 +1,209 @@
+//2) Здійснити виконання усіх прикладів, представлених у теоретичних відомостях, після чого представити скріни їх коду та результати їх виконання у звіті. 
+
+#include <stdio.h>
+int main (void) {
+int x;
+for (x = 1; x <= 100; x ++)
+printf ( "% d", x);
+return 0;
+}
+
+
+//Програма для виводу на екран степеня двійки до 1024
+#include<stdio.h>
+int main() {
+int i=2;
+while (i<=1024)
+     {
+         i = i*2;
+         printf("%d\n",i);
+     }
+}
+
+
+//Програма демонструє виведення на екран значення числа k =50 
+#include<stdio.h>
+int main() {
+int j=0,k=0;
+while(j<5)
+   {
+k+=10;
+j++;
+    }
+printf("k=%d\n",k);
+}
+
+
+//Наступна програма демонструє виведення на екран значення чисел b,c,a. 
+#include<stdio.h>
+int main() {
+int a=2, b=10,c;
+do
+{
+b=b+a; c=10*a; a++;
+}
+while(a<5);
+printf("\nb=%d c=%d a=%d",b,c,a);
+}
+
+
+//Нижченаведена програма демонструє процес введення числа до того моменту, поки його значення не буде співпадати з магічним числом. 
+#include<stdio.h>
+#include<stdlib.h>
+int main(void) {
+int magic;
+int guess;
+magic=rand();
+printf("vgaday chuslo:");
+scanf("%d",&guess);
+if(guess==magic){
+printf("virno");
+printf("magichne chuslo rivne %d",magic);
+}
+else {
+printf("nevirno\n");
+while (guess!=magic){
+printf("vgaday chuslo:");
+scanf("%d",&guess);
+printf("nevirno\n");
+}
+}
+}
+
+
+
+//Наступна програма після введення кожного числа здійснює підрахунок кількості спроб та виводить це значення.
+#include<stdio.h>
+#include<stdlib.h>
+int main(void) {
+int magic;
+int guess;
+int m=1;
+magic=rand();
+
+printf("vgaday chuslo:");
+scanf("%d",&guess);
+if(guess==magic){
+printf("virno");
+printf("magichne chuslo rivne %d",magic);
+     }
+
+else {
+printf("nevirno\n");
+printf("m=%d\n",m);
+while (guess!=magic){
+m++;
+printf("vgaday chuslo:");
+scanf("%d",&guess);
+printf("nevirno\n");
+printf("m=%d\n",m);
+}
+}
+}
+
+
+//У наступній програмі введено обмеження на максимальну кількість спроб введення числа, яке дорівнює значенню рандомно згенерованого магічного числа. Після використання к-сті заданих спроб, виводиться значення магічного числа. 
+#include <stdio.h>
+#include <stdlib.h>
+int main(void) {
+int magic;
+int guess;
+int m=1; /*кількість спроб*/
+magic=rand();
+printf("vgaday chuslo:");
+scanf("%d",&guess);
+if(guess==magic){
+printf("virno");
+printf("magichne chuslo rivne %d", magic);
+     }
+else {
+printf("nevirno\n");
+printf("m=%d\n",m);
+while (guess!=magic){
+m++;
+printf("vgaday chuslo:");
+scanf("%d", &guess);
+printf("nevirno\n");
+printf("m=%d\n",m);
+if(m>9){
+printf("magic=%d\n", magic);
+break;
+}
+}
+}
+}
+
+
+
+//3. Виконати нижченаведену програму для обчислення таблиці переведення температури за шкалою Фаренгейта в температуру за шкалою Цельсія. Скрін коду програми та результати її виконання представити у звіті. 
+/* Celsius and Fahrengeit */
+/* C=(5/9)*(F-32) */
+#include<stdio.h>
+#include<conio.h>
+int main() {
+int fahr, celsius;
+int lower, upper, step;
+    
+lower = 0;
+upper = 300;
+step = 20;
+fahr = lower;
+printf("\n\nCelsius Fahrenheit\n");
+while (fahr <= upper) {
+    celsius = 5 * (fahr - 32) / 9;
+    printf("%10d\t%8d\n", fahr, celsius);
+    fahr = fahr + step;
+}
+getch();
+}
+
+
+//4. Скласти програму для створення прямокутного трикутника із зірочок (*), при цьому трикутник має розміри: n рядків у висоту та n символів у ширину. Значення n вводиться з клавіатури. Скрін коду програми та результати її виконання представити у звіті. 
+#include <stdio.h>
+int main() {
+int n;
+printf("Введіть розмір трикутника: ");
+scanf("%d", &n);
+    for (int i = 0; i < n; i++) {
+        for (int j = 0; j <= i; j++) {
+            printf("* ");
+        }
+        printf("\n");
+    }
+}
+
+
+
+//4 ДОДАТКОВЕ ЗАВДАННЯ (РІВНОБЕДРЕНИЙ ТРИКУТНИК))
+#include <stdio.h>
+int main() {
+int n;
+printf("Введіть розмір трикутника: ");
+scanf("%d", &n);
+    for (int i = 1; i <= n; i++) {
+        for (int j = 1; j <= n - i; j++) {
+            printf(" ");
+        }
+        for (int k = 1; k <= i; k++) {
+            printf("* ");
+        }
+        printf("\n");
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
