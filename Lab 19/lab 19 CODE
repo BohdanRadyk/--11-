@@ -1,0 +1,122 @@
+//1. Дослідити та дати пояснення прикладів, викладених нижче
+//Приклад а
+#include <stdio.h>
+int main() {
+    FILE *in; 
+    int ch;
+    if ((in = fopen("proba", "r")) != NULL) {
+        while ((ch = getc(in)) != EOF) { 
+            putc(ch, stdout); 
+        }
+        fclose(in);
+    } else {
+        printf("Файл proba не відкривається\n");
+    }
+    return 0;
+
+
+//Приклад б
+#include <stdio.h>
+int main() {
+    FILE *ff;
+    int base;
+    ff = fopen("sam", "r");
+    if (ff == NULL) {
+        printf("Pomylka: ne mozhna vidkryty fail\n");
+        return 1; 
+    }
+    fscanf(ff, "%d", &base);
+    fclose(ff); 
+    ff = fopen("data", "a"); 
+    if (ff == NULL) {
+        printf("Pomylka: ne mozhna vidkryty fail\n");
+        return 1;
+    }
+    fprintf(ff, "sam is %d.\n", base); 
+    fclose(ff); 
+    return 0;
+}
+
+
+//Приклад в
+#include <stdio.h>
+#define LINE 80
+int main() {
+    FILE *ff;
+    char string[LINE];
+    ff = fopen("opus", "r");
+    if (ff == NULL) {
+        printf("Pomylka: ne mozhna vidkryty fail\n");
+        return 1; 
+    }
+    while (fgets(string, LINE, ff) != NULL) {
+        puts(string);
+    }
+    fclose(ff);
+    return 0;
+}
+
+
+//Приклад г
+#include <stdlib.h>
+#include <stdio.h>
+int main() {
+    int f1, f2, f3, f4, f5;
+    FILE *fp;
+    fp = fopen("C:\\temp\\sample.txt", "r");
+    if (fp == NULL) {
+        printf("Pomylka: ne mozhna vidkryty fail\n");
+        return 1;
+    }
+    fscanf(fp, "%d\n%d\n%d\n%d\n%d\n", &f1, &f2, &f3, &f4, &f5);
+    printf("The values are %d, %d, %d, %d, %d.\n", f1, f2, f3, f4, f5);
+    fclose(fp);
+    return 0;
+}
+
+
+//3.Виконати програму, що створює файл proba.txt і записує в нього  символьні зображення чисел від 0 до 5 і їх кубів. Наступною програмою  прочитати дані із файлу proba.txt. У звіті дати детальне пояснення роботи  програм.
+//Програма 1
+#include <stdio.h>
+int main(void)
+{
+    FILE *pf;
+    int k;
+
+    if ((pf = fopen("proba.txt", "w")) == NULL) {
+        perror("proba.txt");
+    }
+    for (k = 0; k <= 5; k++) {
+        fprintf(pf, "%d %d\n", k, k * k * k * k); 
+    }
+    fclose(pf);
+    return 0;
+}
+
+
+//Програма 2
+#include <stdio.h>
+int main(void) {
+    FILE *pf;
+    int n, nn, l;
+    if ((pf = fopen("proba.txt", "r")) == NULL) {
+        perror("proba.txt"); 
+        return 1;
+    }
+    for (l = 0; l < 5; l++) {
+        fscanf(pf, "%d %d\n", &n, &nn);
+        printf("%d %d\n", n, nn);
+    }
+    fclose(pf);
+
+    return 0;
+}
+
+
+
+
+
+
+
+
+
