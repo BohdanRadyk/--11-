@@ -1,0 +1,174 @@
+Приклад 1:
+#include <stdio.h>
+#include <math.h>  // Підключення математичної бібліотеки для використання функцій exp() та sin()
+#define _USE_MATH_DEFINES  // Включення констант математичних функцій, таких як M_PI
+#include <limits.h>  // Підключення бібліотеки для використання констант INFINITY
+
+int main() {
+    int N = 32;  // Оголошення та ініціалізація змінної N
+    double y, min_value, max_value;  // Оголошення змінних для значення функції та мінімального/максимального значень
+    int min_i, max_i;  // Оголошення змінних для збереження індексів мінімального та максимального значень
+
+    min_value = INFINITY;  // Ініціалізація мінімального значення як нескінченності
+    max_value = -INFINITY;  // Ініціалізація максимального значення як мінус нескінченність
+
+    printf(" i  |         y\n");  // Виведення заголовка таблиці
+    printf("----|--------------------\n");  // Виведення розділювача
+
+    for (int i = 0; i <= 31; i++) {  // Цикл для обчислення та виведення значень функції
+        // Обчислення значення функції за заданою формулою
+        y = i * i * exp(-i * i / 100.0) * sin(2 * M_PI * i / N);
+        printf("%2d  | %0.10f\n", i, y);  // Виведення значення функції у таблицю з 10 знаками після коми
+
+        // Перевірка на мінімальне значення функції та оновлення мінімального значення та індексу
+        if (y < min_value) {
+            min_value = y;
+            min_i = i;
+        }
+
+        // Перевірка на максимальне значення функції та оновлення максимального значення та індексу
+        if (y > max_value) {
+            max_value = y;
+            max_i = i;
+        }
+    }
+
+    // Виведення найменшого та найбільшого значень функції разом з їх індексами
+    printf("\nНайменше значення функції: y(%d) = %0.10f\n", min_i, min_value);
+    printf("Найбільше значення функції: y(%d) = %0.10f\n", max_i, max_value);
+
+    return 0;  // Повернення 0, що означає успішне завершення програми
+}
+
+Приклад 2:
+#include <stdio.h>
+#include <conio.h>
+#include <math.h>
+
+int main() {
+    int i = 0;
+    float precision_a, precision_b;
+    double double_precision_a, double_precision_b;
+    long double long_double_precision_a, long_double_precision_b;
+
+
+    // Оцінка для типу float з використанням циклу for
+    printf("Оцінка машинного нуля для типу float (цикл for):\n");
+    for (precision_a = 1.0; precision_a > 0.0; precision_a /= 2.0) {
+        i++;
+    }
+    printf("Кількість ділень на 2: %d\n", i);
+    printf("Машинний нуль: %e\n\n", precision_a);
+
+    // Оцінка для типу float з використанням циклу while
+    i = 0;  // Скидання лічильника
+    printf("Оцінка машинного нуля для типу float (цикл while):\n");
+    precision_b = 1.0;
+    while (precision_b > 0.0) {
+        precision_b /= 2.0;
+        i++;
+    }
+    printf("Кількість ділень на 2: %d\n", i);
+    printf("Машинний нуль: %e\n\n", precision_b);
+
+    // Оцінка для типу float з використанням циклу do while
+    i = 0;  // Скидання лічильника
+    printf("Оцінка машинного нуля для типу float (цикл do while):\n");
+    do {
+        precision_b /= 2.0;
+        i++;
+    } while (precision_b > 0.0);
+    printf("Кількість ділень на 2: %d\n", i);
+    printf("Машинний нуль: %e\n\n", precision_b);
+
+    // Оцінка для типу double
+    printf("Оцінка машинного нуля для типу double:\n");
+    for (double_precision_a = 1.0; double_precision_a > 0.0; double_precision_a /= 2.0) {
+        i++;
+    }
+    printf("Кількість ділень на 2: %d\n", i);
+    printf("Машинний нуль: %le\n\n", double_precision_a);
+
+    // Оцінка для типу long double
+    printf("Оцінка машинного нуля для типу long double:\n");
+    for (long_double_precision_a = 1.0; long_double_precision_a > 0.0; long_double_precision_a /= 2.0) {
+        i++;
+    }
+    printf("Кількість ділень на 2: %d\n", i);
+    printf("Машинний нуль: %Le\n\n", long_double_precision_a);
+
+    return 0;
+}
+
+Приклад 3:
+#include <stdio.h>
+int main() {
+    int rows = 9;  // Кількість рядків у трикутнику
+
+    for (int i = 0; i < rows; i++) {
+        for (int j = 0; j <= i; j++) {
+            printf("%c", 100 + j);  // Виведення символів з коду 100 і вище
+        }
+        printf("\n");
+    }
+
+    return 0;
+}
+
+Приклад 4(Індивідуальне завдання):
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+    int N;
+    double s = 0;
+
+    printf("Введіть натуральне число N: ");
+    scanf("%d", &N);
+
+    for (int i = 1; i <= N; i++) {
+        double product = 1;
+        for (int j = 1; j <= i; j++) {
+            product *= j;
+        }
+        s += product;
+    }
+
+    printf("Результат суми: %lf\n", s);
+
+    return 0;
+}
+
+Приклад 5:
+#include <stdio.h>
+#include <math.h>
+#define EPSILON 0.00001
+#define PI 3.141592653589793
+double taylor_sin(double x, int *iterations) {
+    double term = x;
+    double sum = term;
+    int n = 1;
+    while (fabs(term) >= EPSILON) {
+        term *= -x * x / ((2 * n) * (2 * n + 1));
+        sum += term;
+        n++;
+    }
+    *iterations = n;
+    return sum;
+}
+int main() {
+    double x;
+    printf("Введіть значення x (0 ≤ x ≤ π): ");
+    scanf("%lf", &x);
+    if (x < 0 || x > PI) {
+        printf("Помилка: x повинно бути в межах [0, π]\n");
+        return 1;
+    }
+    double library_sin = sin(x);
+    int iterations;
+    double taylor_sin_value = taylor_sin(x, &iterations);
+    printf("sin(x) за допомогою бібліотечної функції: %.10lf\n", library_sin);
+    printf("sin(x) за допомогою ряду Тейлора: %.10lf\n", taylor_sin_value);
+    printf("Кількість ітерацій: %d\n", iterations);
+    return 0;
+}
