@@ -1,0 +1,109 @@
+Хід роботи :
+1.	Ознайомитися з теоретичними відомостями.
+2.	Здійснити виконання прикладів, представлених у теоретичних відомостях, після чого представити скріни їх коду та результати виконання у звіті.
+#include <stdio.h>
+#include <math.h>
+
+double Geron(double a, double b, double c) {
+  double p = (a + b + c) / 2;
+  return sqrt(p * (p - a) * (p - b) * (p - c));
+}
+
+int main() {
+  double u, v, w;
+  double s;
+
+  printf("Введіть сторони трикутника: ");
+  scanf("%lf %lf %lf", &u, &v, &w);
+
+  // Виклик функції Geron для обчислення площі трьох трикутників
+  s = Geron(u, v, w);
+  printf("Площа трикутника 1: %lf\n", s);
+
+  s = Geron(10.3, 8.1, 9.7);
+  printf("Площа трикутника 2: %lf\n", s);
+
+  s = Geron(u + 10.3, v + w, w * 1.7);
+  printf("Площа трикутника 3: %lf\n", s);
+
+  return 0;
+}
+
+
+
+
+
+#include<stdio.h>
+#include<math.h>
+double fract(int,int);
+double factorial(int);
+int main() {
+int m,n,s;
+scanf("%d %d",&m,&n);
+printf ("%lf\n", fract(m+1,n+1));
+return 0;
+}
+double fract(int x, int y) {
+double t;
+t=factorial(x+y)/(x*y);
+return t;
+}
+double factorial (int n) {
+int i;
+double p;
+p=1;
+for(i=1;i<=n;++i)
+p*=i;
+return p;
+}
+
+
+
+
+
+
+3.	Написати програму з використанням функції, яка друкує визначену кількість символів рядка. Уточнення: дана функція повинна приймати рядок символів і ціле число, яке визначатиме кількість символів, що слід надрукувати. Скрін коду програми та результати її виконання представити у звіті.
+#include <stdio.h>
+#include <string.h>
+
+// Функція для друку визначеної кількості символів рядка
+void print_characters(const char* str, int num) {
+    for (int i = 0; i < num && str[i] != '\0'; i++) {
+        putchar(str[i]);
+    }
+    putchar('\n');  // Друк символу нового рядка після виводу символів
+}
+
+int main() {
+    char inputString[100];
+    int num;
+
+    // Введення рядка
+    printf("Введіть рядок: ");
+    fgets(inputString, sizeof(inputString), stdin);
+    
+    // Видалення символу нового рядка, якщо він присутній
+    size_t len = strlen(inputString);
+    if (len > 0 && inputString[len - 1] == '\n') {
+        inputString[len - 1] = '\0';
+    }
+
+    // Введення кількості символів для друку
+    printf("Введіть кількість символів для друку: ");
+    scanf("%d", &num);
+
+    // Виклик функції для друку символів
+    printf("Результат: ");
+    print_characters(inputString, num);
+
+    return 0;
+}
+
+
+
+
+4.	Оформити звіт.
+
+Висновок
+На даній лабораторній роботі навчився використовувати функції у процесі програмування, зрозумів особливості використання локальних та глобальних змінних, специфікаторів різних класів пам’яті.
+
