@@ -1,0 +1,155 @@
+Хід роботи :
+1.	Ознайомитися з теоретичними відомостями.
+2.	Здійснити виконання прикладів, представлених у теоретичних відомостях, після чого представити скріни їх коду та результати виконання у звіті.
+#include <stdio.h>
+#include <string.h>
+
+int main(void)
+
+{
+    char s1 [80], s2[80];
+    gets(s1);
+    gets(s2);
+    printf("Dovzuna: %d %d\n", strlen(s1), strlen(s2));
+    if(!strcmp(s1, s2)) printf("Ryadku rivni\n");
+    strcat(s1, s2);
+    printf("%s\n", s1);
+    strcpy(s1, "Perevirka.\n");
+    printf(s1);
+    return 0;
+}
+Скріншот виконання коду :
+Помилка компілятора
+
+
+
+
+
+#include <stdio.h>
+#include <stdlib.h>
+
+#define N 10
+
+int main() {
+    double m[N];
+    int k;
+    for(k = 0; k < N; ++k ) {  
+        printf("Значення номер %d: ", k);
+        scanf("%lf", &m[k]);
+    }
+
+    return 0;
+}
+
+
+
+
+
+
+
+
+#include <stdio.h> 
+int main(void){
+    int x[100]; /* оголошення масиву цілого типу з 100 чисел */
+    int t;
+    for(t=0; t<100; ++t) x[t] = t; /* присвоєння масиву значень від 0 до 99 */ 
+    for(t=0; t<100; ++t) printf("%d ", x[t]);
+    return 0;
+}
+Скріншот виконання коду :
+
+
+
+
+
+
+
+
+
+
+#include <stdio.h>
+int main(void)
+{
+    int t, i, num[3][4];
+    for(t=0; t<3; ++t)
+    for(i=0; i<4; ++i)
+    num[t][i] = (t*4)+i+1;
+    /* вивід на екран */
+    for(t=0; t<3; ++t) {
+        for(i=0; i<4; ++i)
+        printf("%3d", num[t][i]);
+        printf("\n");
+        
+    }
+    return 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+#include <stdio.h>
+#define MAX 100
+#define LEN 80
+char text[MAX][LEN];
+int main(void)
+{
+register int t, i, j;
+printf("Dlya vuxody vvedit pystuyi ryadok.\n");
+for(t=0; t<MAX; t++) {
+printf("%d: ", t);
+gets(text[t]);
+if(!*text[t]) break; /* вихід при пустому рядку */
+}
+for(i=0; i<t; i++) {
+for(j=0; text[i][j]; j++) putchar(text[i][j]);
+putchar('\n');
+}
+return 0;
+}
+Напишіть програму, яка заповнює масив довільними цілими числами, введеними з клавіатури (розмір масиву становить 10), обчислює суму всіх елементів та виводить на екран сам масив і значення суми його елементів.
+#include <stdio.h>
+
+int main() {
+int array[10];
+int sum = 0;
+
+// Введення елементів масиву з клавіатури
+printf("Введіть 10 цілих чисел:\n");
+for (int i = 0; i < 10; i++) {
+printf("Елемент %d: ", i + 1);
+scanf("%d", &array[i]);
+}
+
+// Обчислення суми елементів масиву
+for (int i = 0; i < 10; i++) {
+sum += array[i];
+}
+
+// Виведення масиву та суми його елементів
+printf("Введений масив:\n");
+for (int i = 0; i < 10; i++) {
+printf("%d ", array[i]);
+}
+printf("\nСума елементів масиву: %d\n", sum);
+
+return 0;
+}
+
+
+
+
+
+
+
+
+
+Висновок
+На даній лабораторній роботі навчився використовувати масиви у процесі програмування, обробляючи велику кількість значень.
