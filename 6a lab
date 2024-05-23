@@ -1,0 +1,434 @@
+1.	Виконати усі приклади, що наведені в теоретичних відомостях.
+#include <stdio.h>
+int main() 
+{
+    int z; 
+    int w;
+    int x=1; 
+    int y=2;
+    z=y+x; 
+    w=y-x;
+    printf("Результат %d,%d",z,w);
+}
+
+
+
+
+
+
+
+
+
+#define PI 3.14159
+#include <stdio.h>
+int main()
+{
+    int a = 5;
+    float b = 23.5;
+    int c = 31000;
+    printf("%d метрів тканини коштувало %f гривень.\n", a, b);
+    printf("Значення числа рі рівне %f.\n", PI);
+    printf(" ІВМ сумісні комп'ютери набули широкого розповсюдження.\n");
+    printf("%c%d\n", '$', c);
+    return 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#include <stdio.h>
+int main()
+{
+    printf("/%d\n", 557);
+    printf("/%2d\n", 557);
+    printf("/%10d\n", 557);
+    printf("%-10d\n", 557);
+    return 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#include <stdio.h>
+
+int main()
+{
+    printf("%f/\n", 6543.21);
+    printf("%e/\n", 6543.21); 
+    printf("/%4.2f/\n", 6543.21); 
+    printf("%3.1f/\n", 6543.21); 
+    printf("%10.3f/\n", 6543.21); 
+    printf("/%10.3e/\n", 6543.21); 
+    return 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#include <stdio.h>
+#define riadok "Чудова погода"
+int main() {
+    printf("%2s/\n", riadok);       
+    printf("%15s/\n", riadok);       
+    printf("%15.5s/\n", riadok);     
+    printf("%-15.5s/\n", riadok);   
+    return 0;
+}
+
+
+
+
+
+
+
+
+
+
+#include <stdio.h>
+int main()
+{
+    printf("%d\n", 557);  
+    printf("%o\n", 557);  
+    printf("%x\n", 557); 
+    printf("%d\n", -557); 
+    printf("%u\n", (unsigned int)-557); 
+    return 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+#include <stdio.h>
+int main()
+{
+    int vik;
+    char name[30];
+    printf("Vash vik?\n");
+    scanf("%d", &vik);
+    printf("Uvedit vashe imja\n");
+    scanf("%s", name);
+    printf("Pryvit %s, yakomu %d rokiv\n", name, vik);
+    return 0;
+}
+
+
+
+
+
+
+
+
+
+#include <stdio.h>
+#define STOP '*'
+int main()
+{
+    char ch;
+    ch = getchar();
+    while (ch != STOP)
+    {
+        putchar(ch);
+        ch = getchar();
+    }
+    return 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+2.	У звіті зазаначити формати, що використовуються функціями printf()
+і scanf().
+
+PRINTF
+ 
+SCANF
+ 
+3.		Створиит програму, в якій задати числа, що оголошені як типи int, float, char, long та вивчити вплив модифікаторів специфікації перетворення для функції printf().
+#include <stdio.h>
+
+int main() {
+    int i = 10;
+    float f = 3.14;
+    char ch = 'A';
+    long l = 123456;
+
+    // Виведення значень без модифікаторів
+    printf("Ціле число: %d\n", i);
+    printf("Дійсне число: %f\n", f);
+    printf("Символ: %c\n", ch);
+    printf("Довге ціле число: %ld\n", l);
+
+    // Виведення значень з модифікаторами
+    printf("\nЗастосування модифікаторів специфікації перетворення:\n");
+    printf("Ціле число (поле шириною 5): %5d\n", i);
+    printf("Дійсне число (поле шириною 10 та 2 знаками після коми): %10.2f\n", f);
+    printf("Символ (з шириною 8): %8c\n", ch);
+    printf("Довге ціле число (з шириною 15): %15ld\n", l);
+
+    return 0;
+}
+4.	Надрукувати в рядок 10 будь-яких символів таблиці ASCII та відповідні їм коди в десятковій, вісімковій, шістнадцятковій системах.
+# 4 task
+#include <stdio.h>
+
+int main() {
+    int i;
+    i = 1;
+    int a;
+    a = 2;
+    int b;
+    b = 3;
+    int c;
+    c = 4;
+    int g; 
+    g = 5;
+    int e;
+    e = 6;
+    int f;
+    f = 7;
+    int h; 
+    h = 8;
+    int k;
+    k = 9;
+    int l;
+    l = 10;
+    printf(" Десяткове | Вісімкове | Шістнадцяткове\n");
+    printf("----------------------------------------------\n");
+    printf(" %3d     |    %3o     |      %2X\n", i, i, i, i); 
+    printf(" %3d     |    %3o     |      %2X\n", a, a, a, a);
+    printf(" %3d     |    %3o     |      %2X\n", b, b, b, b);
+    printf(" %3d     |    %3o     |      %2X\n", c, c, c, c);
+    printf(" %3d     |    %3o     |      %2X\n", g, g, g, g);
+    printf(" %3d     |    %3o     |      %2X\n", e, e, e, e);
+    printf(" %3d     |    %3o     |      %2X\n", f, f, f, f);
+    printf(" %3d     |    %3o     |      %2X\n", h, h, h, h);
+    printf(" %3d     |    %3o     |      %2X\n", k, k, k, k);
+    printf(" %3d     |    %3o     |      %2X\n", l, l, l, l);
+    
+    return 0;
+}
+5.	Створити програму для розв’язання задачі купівлі товарів за формулою - вартість купівлі дорівнює: ціна товару помножена кількість. Знайти суму купівлі при номенклатурі товарів не менше 5. Вхідні дані задавати: а). під час оголошення змінних, б). введенням із клавіатури використовуючи функцію scanf(). Результати оформити у вигляді таблиці.
+#include <stdio.h>
+
+int main() {
+    // Оголошення змінних
+    float price[5];
+    int quantity[5];
+    float total[5];
+
+    // Введення цін і кількостей товарів з клавіатури
+    printf("Введіть ціни та кількості товарів:\n");
+    for (int i = 0; i < 5; i++) {
+        printf("Товар %d: ", i + 1);
+        scanf("%f %d", &price[i], &quantity[i]);
+        total[i] = price[i] * quantity[i];
+    }
+
+    // Виведення результатів у вигляді таблиці
+    printf("\n%-10s%-10s%-10s\n", "Товар", "Ціна", "Сума");
+    for (int i = 0; i < 5; i++) {
+        printf("%-10d%-10.2f%-10.2f\n", i + 1, price[i], total[i]);
+    }
+
+    return 0;
+}
+ 
+6.	Створити програму обчислення довжини кола та площі круга за радіусом, який задавати введеням із клавіатури.
+#include <stdio.h>
+#define PI 3.14159265359
+
+int main() {
+    float radius;
+    float circumference, area;
+
+    // Введення радіуса з клавіатури
+    printf("Введіть радіус круга: ");
+    scanf("%f", &radius);
+
+    // Обчислення довжини кола та площі круга
+    circumference = 2 * PI * radius;
+    area = PI * radius * radius;
+
+    // Виведення результатів
+    printf("Довжина кола: %.2f\n", circumference);
+    printf("Площа круга: %.2f\n", area);
+
+    return 0;
+}
+ 
+7.	Створити програму обчислення коренів квадратного рівняння. Задачу виконати у вигляді діалогу з уведенням набору коефіцієнтів за допомогою клавіатури.
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+    float a, b, c;
+    float discriminant, root1, root2;
+
+    // Введення коефіцієнтів з клавіатури
+    printf("Введіть коефіцієнти a, b і c квадратного рівняння (ax^2 + bx + c = 0):\n");
+    printf("a: ");
+    scanf("%f", &a);
+    printf("b: ");
+    scanf("%f", &b);
+    printf("c: ");
+    scanf("%f", &c);
+
+    // Обчислення дискримінанту
+    discriminant = b * b - 4 * a * c;
+
+    // Обчислення коренів
+    if (discriminant > 0) {
+        root1 = (-b + sqrt(discriminant)) / (2 * a);
+        root2 = (-b - sqrt(discriminant)) / (2 * a);
+        printf("Корені рівняння: %.2f та %.2f\n", root1, root2);
+    } else if (discriminant == 0) {
+        root1 = root2 = -b / (2 * a);
+        printf("Рівняння має два однакові корені: %.2f\n", root1);
+    } else {
+        printf("Рівняння не має реальних коренів\n");
+    }
+
+    return 0;
+}
+ 
+8.	Модифікувати програму виведення на друк групи символів із застосуванням функцій getchar() і putchar() так, щоб символом припиненням роботи програми при уведенні був звуковий сигнал - функція sound(частота).
+#include <stdio.h>
+#include <windows.h> // Для використання функції Beep()
+
+// Функція для відтворення звукового сигналу з заданою частотою
+void sound(int frequency) {
+    Beep(frequency, 500); // 500 мс тривалість сигналу
+}
+
+int main() {
+    printf("Введіть символи (звуковий сигнал припинення роботи): \n");
+    
+    char ch;
+    while ((ch = getchar()) != '\a') { // Перевірка на символ звукового сигналу
+        putchar(ch);
+    }
+    
+    printf("\nРоботу програми завершено.\n");
+    
+    return 0;
+}
+9.		Обчислити периметр трикутника, його площу та радіус вписаного кола за заданими координатами його вершин А(1; 1), B(2k; 2k-1), C(- 2k; k+2), де к – номер варіанта.
+Формули для обчислення:
+-	відстань між точками (x1 , y1 ),(x2 , y2 ) :
+
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+    // Задані координати вершин трикутника
+    int x1 = 1, y1 = 1;  // Вершина A
+    int k = 2;  // Номер варіанту
+    int x2 = 2 * k, y2 = 2 * k - 1;  // Вершина B
+    int x3 = -2 * k, y3 = k + 2;  // Вершина C
+
+    // Знайдемо сторони трикутника (довжини відрізків між вершинами)
+    double a = sqrt(pow(x2 - x1, 2) + pow(y2 - y1, 2));  // Відстань між точками A та B
+    double b = sqrt(pow(x3 - x2, 2) + pow(y3 - y2, 2));  // Відстань між точками B та C
+    double c = sqrt(pow(x1 - x3, 2) + pow(y1 - y3, 2));  // Відстань між точками C та A
+
+    // Обчислимо периметр трикутника
+    double perimeter = a + b + c;
+
+    // Обчислимо півпериметр для формули Герона
+    double p = perimeter / 2;
+
+    // Обчислимо площу трикутника за формулою Герона
+    double area = sqrt(p * (p - a) * (p - b) * (p - c));
+
+    // Обчислимо радіус вписаного кола за формулою
+    double radius = area / p;
+
+    // Виведемо результати
+    printf("Периметр трикутника: %.2lf\n", perimeter);
+    printf("Площа трикутника: %.2lf\n", area);
+    printf("Радіус вписаного кола: %.2lf\n", radius);
+
+    return 0;
+}
+ 
+
+10 завдання 
+ 
+
+#include <stdio.h>
+
+int main() {
+    double a = 1000;
+    double b = 0.0001;
+
+    // Проміжні змінні
+    double c = a * a;
+    double d = 2 * a * b;
+    double e = b * b;
+
+    // Обчислення виразу
+    double numerator = c + d + e - (c + d); // Це спрощується до просто e (b*b)
+    double denominator = e;
+
+    // Остаточний результат
+    double result = numerator / denominator;
+
+    // Вивід результату
+    printf("Result: %f\n", result);
+
+    return 0;
+}
+
+ 
+Висновок
+На цій лабораторній роботі дослідив структуру та викорстання функцій введення та виведення даних у програмах на мові С.
+
