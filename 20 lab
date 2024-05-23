@@ -1,0 +1,127 @@
+#include <graphics.h>
+#include <math.h>
+
+int main() {
+    int gd = DETECT, gm;
+    initgraph(&gd, &gm, "");
+
+    double x, y;
+    for (x = 0; x <= 3 * M_PI; x += 0.1) {
+        y = sin(x);
+
+        int screen_x = x * 100; 
+        int screen_y = 100 - y * 50; 
+        putpixel(screen_x, screen_y, WHITE);
+    }
+
+    delay(50000); 
+    closegraph();
+    return 0;
+}
+
+
+
+
+
+2.Розробити простий графічний редактор, що дозволяє набирати на екрані монітора довільний текст (з можливістю динамічного вибору шрифту і розміру символів у діалоговому режимі). Для вирішення завдання використати функцію.
+#include <graphics.h>
+#include <conio.h>
+#include <stdio.h>
+
+#define ESC 27
+
+int main() {
+    int gd = DETECT, gm;
+    initgraph(&gd, &gm, "");
+
+    int font = DEFAULT_FONT;
+    int size = 2;
+    settextstyle(font, HORIZ_DIR, size);
+
+    int x = 100, y = 100;
+
+    char text[100] = "";
+    char ch;
+    int i = 0;
+    do {
+        ch = getch();
+        if (ch == 13) 
+            break;
+        else if (ch == ESC) 
+            return 0;
+        else if (ch == 8) { 
+            if (i > 0) {
+                i--;
+                text[i] = '\0';
+                outtextxy(x, y, " "); 
+            }
+        } else {
+            text[i++] = ch;
+            text[i] = '\0';
+            outtextxy(x, y, text);
+            x += textwidth(text); 
+        }
+    } while (1);
+
+    getch();
+    closegraph();
+    return 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+3.Розробити програму для виведення в графічному режимі зображения об'єкта (кулі), що рухається по діагоналі екрану.
+Для імітації руху зображення об'єкта на екрані необхідно виконати такий алгоритм: 1. Нарисувати об’єкт у заданій точці. 2. Витерти об’єкт, замалювавши його кольором тла. 3. Змінити координати об’єкта. 4. Перейти до пункту 1. розміру символів у діалоговому режимі). Для вирішення завдання використати функцію.
+#include <graphics.h>
+#include <conio.h>
+
+int main() {
+    int gd = DETECT, gm;
+    initgraph(&gd, &gm, "");
+
+    int x = 0, y = 0; 
+    int dx = 1, dy = 1;
+
+
+    while (!kbhit()) { 
+   
+        cleardevice();
+
+  
+        circle(x, y, 20); 
+
+        x += dx;
+        y += dy;
+
+        delay(50);
+
+        if (x <= 0 || x >= getmaxx()) {
+            dx = -dx;
+        }
+        if (y <= 0 || y >= getmaxy()) {
+            dy = -dy;
+        }
+    }
+
+    closegraph();
+    return 0;
+}
+
+
+
+
+
+
+
+
+Висновок
+На даній лабораторній роботі дослідив основні принципи відображення графічної інформації на екрані дисплея.
+
