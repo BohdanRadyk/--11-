@@ -1,0 +1,147 @@
+Хід роботи
+1.	Ознайомитися з теоретичними відомостями.
+2.	Здійснити виконання прикладів, представлених у теоретичних відомостях, після чого представити скріни їх коду та результати виконання у звіті.
+#include <stdio.h>
+int main(void) {
+    struct { 
+        int a; int b;
+        
+    } x, y;
+    x.a = 10;
+    y = x; /* присвоювання одної структури другій */ printf("%d", y.a);
+    return 0;
+}
+
+
+
+
+#include <stdio.h>
+/* визначення структури*/ struct student
+{
+    char name[30]; 
+    int kurs;
+    int age;
+};
+int main()
+{
+    /* оголошення змінної stud1 типу struct student*/ 
+    struct student stud1;
+    printf("Vvedit imya:"); 
+    gets(stud1.name); 
+    printf("Vvedit vik:");
+    scanf("%d", &stud1.age);
+    printf("Vvedit kyrs:"); 
+    scanf("%d", &stud1.kurs);
+    printf("Student %s\n", stud1.name);
+    printf("Kyrs %d\n", stud1.kurs);
+    printf("Vik %d\n", stud1.age);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+#include <stdio.h>
+/* визначення структури*/ struct student
+{
+char name[30]; int kurs;
+int age;
+};
+int main()
+{
+/* оголошення масиву на 10 структур */ struct student stud[10];
+int i, n;
+
+printf("Kilkict studentiv:"); scanf("%d", &n); for(i=0;i<n;i++)
+{
+printf("Vvedit imya:"); scanf("%s", stud[i].name); printf("Vvedit vik:"); scanf("%d", &stud[i].age); printf("Vvedit kurs:"); scanf("%d", &stud[i].kurs);
+}
+
+/* Виведення */ for(i=0;i<n;i++)
+{
+printf("Student %s\n", stud[i].name); printf("Kurs %d\n", stud[i].kurs); printf("Vik %d\n", stud[i].age);
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+3.	Написати програму для виведення нижчепредставленої інформації шляхом використання структури. Ім’я, вага, висота, вік – вводяться з клавіатури ( вказати довільні дані).
+#include <stdio.h>
+
+// Визначення структури для працівника
+struct Employee {
+    char name[30];
+    float weight;
+    float height;
+    int age;
+};
+
+int main() {
+    // Оголошення масиву структур
+    struct Employee employees[10];
+    int n, i;
+
+    printf("Введіть кількість працівників: ");
+    scanf("%d", &n);
+
+    // Введення інформації про працівників
+    for(i = 0; i < n; i++) {
+        printf("Введіть ім'я працівника %d: ", i+1);
+        scanf("%s", employees[i].name);
+
+        printf("Введіть вагу працівника %d: ", i+1);
+        scanf("%f", &employees[i].weight);
+
+        printf("Введіть висоту працівника %d: ", i+1);
+        scanf("%f", &employees[i].height);
+
+        printf("Введіть вік працівника %d: ", i+1);
+        scanf("%d", &employees[i].age);
+    }
+
+    // Виведення інформації про працівників
+    printf("\nІнформація про працівників:\n");
+    for(i = 0; i < n; i++) {
+        printf("Ім'я: %s\n", employees[i].name);
+        printf("Вага: %.2f\n", employees[i].weight);
+        printf("Висота: %.2f\n", employees[i].height);
+        printf("Вік: %d\n", employees[i].age);
+        printf("\n");
+    }
+
+    return 0;
+}
+
+
+
+
+
+
+
+4.	Оформити звіт.
+
+
+
+Висновок
+На даній лабораторній роботі ознайомився із поняттями структури та обєднанням даних,навчився використовувати їх у процесі програмування .
