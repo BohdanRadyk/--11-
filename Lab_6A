@@ -1,0 +1,316 @@
+#define PI 3.14159
+#include <stdio.h>
+
+int main() {
+    int a = 5;
+    float b = 23.5;
+    int c = 31000;
+
+    printf("%d метрів тканини коштувало %f гривень.\n", a, b);
+    printf("Значення числа pi рівне %f.\n", PI);
+
+    printf("IBM сумісні комп’ютери набули широкого розповсюдження.\n");
+    printf("%c%d\n", '$', c);
+
+    return 0;
+}
+
+2)
+#include <stdio.h>
+
+int main() {
+    printf("/%d\n", 557);
+    printf("/%2d\n", 557);
+    printf("/%10d\n", 557);
+    printf("/%-10d\n", 557);
+
+    return 0;
+}
+
+
+3)
+#include <stdio.h>
+
+int main() {
+    printf("/%f/\n", 6543.21);
+    printf("/%e/\n", 6543.21);
+    printf("/%4.2f/\n", 6543.21);
+    printf("/%3.1f/\n", 6543.21);
+    printf("/%10.3f/\n", 6543.21);
+    printf("/%10.3e/\n", 6543.21);
+
+    return 0;
+}
+
+
+4)
+#include <stdio.h>
+
+#define riadok "Чудова погода"
+
+int main() {
+    printf("/%2s/\n", riadok);
+    printf("/%15s/\n", riadok);
+    printf("/%15.5s/\n", riadok);
+    printf("/%-15.5s/\n", riadok);
+
+    return 0;
+}
+
+
+5)
+#include <stdio.h>
+
+int main() {
+    printf("%d\n", 557);
+    printf("%o\n", 557);
+    printf("%x\n", 557);
+    printf("%d\n", -557);
+    printf("%u\n", -557);
+
+    return 0;
+}
+
+
+6)
+#include <stdio.h>
+
+int main() {
+    int vik;
+    char name[30];
+
+    printf("Vash vik?\n");
+    scanf("%d", &vik);
+
+    printf("Uvedit vase im'ya\n");
+    scanf("%s", name);
+
+    printf("Pryvit, %s, yakomu %d rokiv\n", name, vik);
+
+    return 0;
+}
+
+
+7)
+#include <stdio.h>
+
+#define STOP '*'
+
+int main() {
+    char ch;
+
+    ch = getchar();
+
+m1:
+    if (ch != STOP) {
+        putchar(ch);
+        ch = getchar();
+        goto m1;
+    }
+
+    return 0;
+}
+
+
+8)
+#include <stdio.h>
+
+int main() {
+    int a = 42;
+    float b = 3.14f;
+    char c = 'A';
+    long d = 1234567890L;
+
+    printf("int: %d\n", a);
+    printf("float: %f\n", b);
+    printf("char: %c\n", c);
+    printf("long: %ld\n", d);
+
+    // Модифікатори форматів
+    printf("int (ширина 5): %5d\n", a);
+    printf("float (точність 2): %.2f\n", b);
+    printf("long (ширина 10): %10ld\n", d);
+
+    return 0;
+}
+
+
+9)
+#include <stdio.h>
+
+int main() {
+    char symbols[10] = {'A', 'b', '5', '@', ' ', 'Z', 'k', '0', '#', '!'};
+    
+    printf("Символ | Десятковий | Вісімковий | Шістнадцятковий\n");
+    printf("-------|------------|------------|----------------\n");
+    for (int i = 0; i < 10; i++) {
+        char symbol = symbols[i];
+        printf("   %c   |     %d     |    %o     |      %x\n", symbol, symbol, symbol, symbol);
+    }
+
+    return 0;
+}
+
+
+10)
+#include <stdio.h>
+
+int main() {
+    // Введення даних під час оголошення змінних
+    char *items[] = {"Товар1", "Товар2", "Товар3", "Товар4", "Товар5"};
+    float prices[] = {10.0, 20.0, 15.5, 8.0, 12.3};
+    int quantities[] = {2, 1, 5, 3, 4};
+    float total_cost = 0;
+
+    // Виведення результатів у вигляді таблиці
+    printf("Номенклатура | Ціна | Кількість | Вартість\n");
+    printf("-------------|------|-----------|---------\n");
+    for (int i = 0; i < 5; i++) {
+        float cost = prices[i] * quantities[i];
+        total_cost += cost;
+        printf("%11s | %4.2f | %9d | %7.2f\n", items[i], prices[i], quantities[i], cost);
+    }
+    printf("Загальна вартість: %.2f\n", total_cost);
+
+    return 0;
+}
+
+
+11)
+#include <stdio.h>
+
+int main() {
+    char items[5][20];
+    float prices[5];
+    int quantities[5];
+    float total_cost = 0;
+
+    // Введення даних із клавіатури
+    for (int i = 0; i < 5; i++) {
+        printf("Введіть назву товару %d: ", i + 1);
+        scanf("%s", items[i]);
+        printf("Введіть ціну товару %d: ", i + 1);
+        scanf("%f", &prices[i]);
+        printf("Введіть кількість товару %d: ", i + 1);
+        scanf("%d", &quantities[i]);
+    }
+
+    // Виведення результатів у вигляді таблиці
+    printf("\nНоменклатура | Ціна | Кількість | Вартість\n");
+    printf("-------------|------|-----------|---------\n");
+    for (int i = 0; i < 5; i++) {
+        float cost = prices[i] * quantities[i];
+        total_cost += cost;
+        printf("%11s | %4.2f | %9d | %7.2f\n", items[i], prices[i], quantities[i], cost);
+    }
+    printf("Загальна вартість: %.2f\n", total_cost);
+
+    return 0;
+}
+
+
+12)
+#include <stdio.h>
+#define PI 3.14159
+
+int main() {
+    float radius, circumference, area;
+
+    printf("Введіть радіус кола: ");
+    scanf("%f", &radius);
+
+    circumference = 2 * PI * radius;
+    area = PI * radius * radius;
+
+    printf("Довжина кола: %.2f\n", circumference);
+    printf("Площа круга: %.2f\n", area);
+
+    return 0;
+}
+
+
+13)
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+    double a, b, c, discriminant, root1, root2;
+
+    printf("Введіть коефіцієнт a: ");
+    scanf("%lf", &a);
+    printf("Введіть коефіцієнт b: ");
+    scanf("%lf", &b);
+    printf("Введіть коефіцієнт c: ");
+    scanf("%lf", &c);
+
+    discriminant = b * b - 4 * a * c;
+
+    if (discriminant >= 0) {
+        root1 = (-b + sqrt(discriminant)) / (2 * a);
+        root2 = (-b - sqrt(discriminant)) / (2 * a);
+        printf("Корені рівняння: %.2lf і %.2lf\n", root1, root2);
+    } else {
+        printf("Рівняння не має дійсних коренів\n");
+    }
+
+    return 0;
+}
+
+
+14)
+#include <stdio.h>
+
+int main() {
+    char ch;
+
+    printf("Введіть символи (натисніть Ctrl+D або введіть символ \'#\'): ");
+
+    while ((ch = getchar()) != '#') {
+        putchar(ch);
+    }
+
+    printf("\a"); // Генерація звукового сигналу
+
+    return 0;
+}
+
+
+15)
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+    double x1 = 1, y1 = 1;
+    double x2 = 18, y2 = 17;
+    double x3 = -18, y3 = 11;
+
+    double AB = sqrt(pow(x2 - x1, 2) + pow(y2 - y1, 2));
+    double BC = sqrt(pow(x3 - x2, 2) + pow(y3 - y2, 2));
+    double AC = sqrt(pow(x3 - x1, 2) + pow(y3 - y1, 2));
+
+    double p = (AB + BC + AC) / 2;
+    double S = sqrt(p * (p - AB) * (p - BC) * (p - AC));
+    double r = S / p;
+
+    printf("Периметр трикутника: %lf\n", 2 * p);
+    printf("Площа трикутника: %lf\n", S);
+    printf("Радіус вписаного кола: %lf\n", r);
+
+    return 0;
+}
+
+
+16)
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+    double a = 100, b = 0.001;
+    double result;
+
+    result = pow(a + b, 4) - (pow(a, 4) + 4 * pow(a, 3) * b);
+
+    printf("Результат: %.10f\n", result);
+
+    return 0;
+}
