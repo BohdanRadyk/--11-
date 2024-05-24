@@ -1,0 +1,6 @@
+﻿  laba 18.cpp
+C:\Users\perma\source\repos\laba 18\laba 18\laba 18.cpp(38,11): warning C4477: 'scanf_s' : format string '%49s' requires an argument of type 'unsigned int', but variadic argument 2 has type 'size_t'
+  C:\Users\perma\source\repos\laba 18\laba 18\laba 18.cpp(38,11):
+  this argument is used as a buffer size
+  
+  laba 18.vcxproj -> C:\Users\perma\source\repos\laba 18\x64\Debug\laba 18.exe
