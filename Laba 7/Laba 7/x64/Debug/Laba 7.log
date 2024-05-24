@@ -1,0 +1,4 @@
+﻿  Laba 7.cpp
+C:\Users\perma\source\repos\Laba 7\Laba 7\Laba 7.cpp(169,14): warning C4305: 'initializing': truncation from 'double' to 'float'
+C:\Users\perma\source\repos\Laba 7\Laba 7\Laba 7.cpp(171,15): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+  Laba 7.vcxproj -> C:\Users\perma\source\repos\Laba 7\x64\Debug\Laba 7.exe
