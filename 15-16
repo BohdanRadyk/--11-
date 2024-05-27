@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main() {
+    int numbers[10];    
+for (int i = 0; i < 10; i++) {
+        scanf("%d", &numbers[i]);
+        sum += numbers[i];    }
+
+    printf("Масив: ");
+    for (int i = 0; i < 10; i++) {
+        printf("%d ", numbers[i]);
+    }
+    printf("\nСума елементів масиву: %d\n", sum);
+
+    return 0;
+}
