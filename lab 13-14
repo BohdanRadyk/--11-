@@ -1,0 +1,92 @@
+#include <stdio.h>
+#include <math.h>
+
+double Geron(double a, double b, double c); // Function prototype
+
+int main() {
+    double u, v, w;
+    double s;
+
+    printf("Enter the sides of the triangle (e.g., 2 3 4): ");
+    scanf("%lf %lf %lf", &u, &v, &w);
+
+    s = Geron(u, v, w);
+    printf("Area of triangle 1: %lf\n", s);
+
+    s = Geron(10.3, 8.1, 9.7);
+    printf("Area of triangle 2: %lf\n", s);
+
+    s = Geron(u + 10.3, v + w, w * 1.7);
+    printf("Area of triangle 3: %lf\n", s);
+
+    return 0;
+}
+
+double Geron(double a, double b, double c) {
+    double p = (a + b + c) / 2;
+    return sqrt(p * (p - a) * (p - b) * (p - c));
+}
+
+#include <stdio.h>
+#include <math.h>
+
+double fract(int, int);
+double factorial(int);
+
+int main() {
+    int m, n;
+    double s;
+
+    printf("Enter m and n: ");
+    scanf("%d %d", &m, &n);
+
+    s = fract(m + 1, n + 1);
+    printf("%lf\n", s);
+
+    return 0;
+}
+
+double fract(int x, int y) {
+    double t;
+    t = factorial(x + y) / (x * y);
+    return t;
+}
+
+double factorial(int n) {
+    int i;
+    double p;
+    p = 1;
+    for (i = 1; i <= n; ++i) {
+        p *= i;
+    }
+    return p;
+}
+#include <stdio.h>
+
+void printChars(char str[], int numChars);
+
+int main() {
+    char inputString[100]; // assuming max length of input string is 100
+    int numChars;
+
+    printf("Enter a string: ");
+    fgets(inputString, sizeof(inputString), stdin);
+
+    printf("Enter the number of characters to print: ");
+    scanf("%d", &numChars);
+
+    printChars(inputString, numChars);
+
+    return 0;
+}
+
+void printChars(char str[], int numChars) {
+    int i = 0;
+
+    printf("Printing %d characters:\n", numChars);
+    while (str[i] != '\0' && i < numChars) {
+        putchar(str[i]);
+        i++;
+    }
+    printf("\n");
+}
