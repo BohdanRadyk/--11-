@@ -1,0 +1,117 @@
+#include <stdio.h>
+
+int main() {
+    FILE* in;
+    int ch;
+
+    // Open the file for reading
+    in = fopen("proba.txt", "r");
+    if (in != NULL) {
+        // Read characters until EOF is reached
+        while ((ch = getc(in)) != EOF) {
+            printf("%c", ch);  // Print each character
+        }
+        fclose(in);  // Close the file after reading
+    } else {
+        printf("Файл proba не відкривається\n");
+    }
+
+    return 0;
+}
+ 
+#include <stdio.h>
+
+int main() {
+    FILE* ff;
+    int base;
+
+    ff = fopen("sam", "r");
+    if (ff == NULL) {
+        printf("File 'sam' could not be opened.\n");
+        return 1; // Return 1 to indicate an error
+    }
+
+    fscanf(ff, "%d", &base);
+    fclose(ff);
+
+    ff = fopen("data", "a");
+    if (ff == NULL) {
+        printf("File 'data' could not be opened.\n");
+        return 1; // Return 1 to indicate an error
+    }
+
+    fprintf(ff, "sam is %d.\n", base);
+    fclose(ff);
+
+    return 0;
+}
+#include <stdio.h>
+#define LINE 80
+
+int main() {
+    FILE* ff;
+    char string[LINE];
+
+    ff = fopen("opus", "r");
+    if (ff == NULL) {
+        perror("Помилка відкриття файлу 'opus'");
+        return 1; // Повернення 1 для позначення помилки
+    }
+
+    while (fgets(string, LINE, ff) != NULL) {
+        puts(string);
+    }
+
+    fclose(ff);
+
+    return 0;
+
+
+Код 4
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+    int f1, f2, f3, f4, f5;
+    FILE* fp;
+    fp = fopen("C:\\temp\\sample.txt", "w");
+    fclose(fp);
+
+    fp = fopen("C:\\temp\\sample.txt", "r");
+    if (fp == NULL) {
+        perror("Error opening file");
+        return 1; // Return 1 to indicate an error
+    }
+
+    fscanf(fp, "%d\n%d\n%d\n%d\n%d\n", &f1, &f2, &f3, &f4, &f5);
+    printf("The values are %d, %d, %d, %d, %d\n.", f1, f2, f3, f4, f5);
+
+    fclose(fp);
+
+include <stdio.h>
+
+ int main() {
+       FILE *file_ptr;
+      char text[10];
+       file_ptr = fopen("file.txt", "w");
+       if(file_ptr==NULL)
+         {
+             printf("ERROR");
+       }
+         printf("ведіть текст\n");
+         fgets(text,sizeof(text),stdin);
+         fprintf(file_ptr,"%s",text);
+         fclose(file_ptr);
+         file_ptr = fopen("file.txt", "r");
+         if(file_ptr==NULL)
+             {
+                 printf("ERROR");
+            }
+         while (fgets(text, sizeof(text), file_ptr) ) {
+                 printf("%s", text);
+
+             }
+         return 0;
+     }
+
