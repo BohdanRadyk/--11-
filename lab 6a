@@ -1,0 +1,198 @@
+#include <stdio.h>
+
+int main() {
+printf("/%d\n", 557);
+printf("/%2d\n", 557);
+printf("/%10d\n", 557);
+printf("/%-10d\n", 557);
+return 0;
+}
+#include <stdio.h>
+
+int main() {
+char riadok[] = "Чудова погода";
+
+
+
+
+
+1
+printf("/%2s/\n", riadok);
+printf("/%15.s/\n", riadok);
+printf("/%15.5s/\n", riadok);
+printf("/%-15.5s/\n", riadok);
+
+printf("%d\n", 557);
+printf("%o\n", 557);
+printf("%x\n", 557);
+printf("%d\n", -557);
+printf("%u\n", -557);
+
+return 0;
+}
+#include <stdio.h>
+
+int main() {
+    int vik;
+    char name[30];
+
+    printf("Vash vik?\n");
+    scanf("%d", &vik);
+    printf("Uvedit vashe imja\n");
+    scanf("%s", name);
+
+    printf("\033[2J"); // Очистка екрану
+
+    printf("Pryvit %s jakomu %d rokiv\n", name, vik);
+
+    return 0;
+}
+#include <stdio.h>
+
+int main() {
+    int integerNumber = 42;
+    float floatNumber = 3.14159;
+    char character = 'A';
+    long longNumber = 123456789;
+    printf("Integer: %d\n", integerNumber);
+    printf("Integer with width modifier: %5d\n", integerNumber);
+    printf("Integer with zero padding: %05d\n", integerNumber);
+    printf("Integer with left justification: %-5d\n", integerNumber);
+    printf("Float: %f\n", floatNumber);
+    printf("Float with precision: %.2f\n", floatNumber);
+    printf("Float with exponent format: %e\n", floatNumber);
+    printf("Character: %c\n", character);
+    printf("Character as integer: %d\n", character);
+    printf("Long: %ld\n", longNumber);
+    printf("Long with width modifier: %10ld\n", longNumber);
+
+    return 0;
+}
+
+#include <stdio.h>
+
+int main() {
+    printf("Decimal\tOctal\tHexadecimal\n");
+    printf("1\t%o\t%x\n", 1, 1);
+    printf("3\t%o\t%x\n", 3, 3);
+    printf("5\t%o\t%x\n", 5, 5);
+    printf("7\t%o\t%x\n", 7, 7);
+    printf("45\t%o\t%x\n", 45, 45);
+    printf("8\t%o\t%x\n", 8, 8);
+    printf("78\t%o\t%x\n", 78, 78);
+    printf("6\t%o\t%x\n", 6, 6);
+
+    return 0;
+}
+#include <stdio.h>
+
+int main() {
+    float price_1, price_2, price_3;
+    int quantity_1, quantity_2, quantity_3;
+    float total;
+
+    printf("Enter price of item 1: ");
+    scanf("%f", &price_1);
+    printf("Enter quantity of item 1: ");
+    scanf("%d", &quantity_1);
+
+    printf("Enter price of item 2: ");
+    scanf("%f", &price_2);
+    printf("Enter quantity of item 2: ");
+    scanf("%d", &quantity_2);
+
+    printf("Enter price of item 3: ");
+    scanf("%f", &price_3);
+    printf("Enter quantity of item 3: ");
+    scanf("%d", &quantity_3);
+
+    total = price_1 * quantity_1 + price_2 * quantity_2 + price_3 * quantity_3;
+
+    printf("\nTotal purchase amount: %.2f\n", total);
+
+    return 0;
+}
+#include <stdio.h>
+#include <math.h>
+
+#define PI 3.14159265359
+
+int main() {
+    float radius, circumference, area;
+
+    printf("Enter the radius of the circle: ");
+    scanf("%f", &radius);
+
+    circumference = 2 * PI * radius;
+    area = PI * pow(radius, 2);
+
+    printf("Circumference: %.2f\n", circumference);
+    printf("Area: %.2f\n", area);
+
+    return 0;
+}
+include <stdio.h>
+#include <math.h>
+
+int main() {
+    float a, b, c;
+    float discriminant, root1, root2;
+
+    printf("Enter coefficients (a, b, c) of the quadratic equation: ");
+    scanf("%f %f %f", &a, &b, &c);
+
+    discriminant = b * b - 4 * a * c;
+
+    if (discriminant > 0) {
+        root1 = (-b + sqrt(discriminant)) / (2 * a);
+        root2 = (-b - sqrt(discriminant)) / (2 * a);
+        printf("Roots are real and different.\n");
+    } else if (discriminant == 0) {
+        root1 = root2 = -b / (2 * a);
+        printf("Roots are real and same.\n");
+    } else {
+        printf(" ERROR\n");
+
+    }
+
+    printf("Root 1 = %.2f\nRoot 2 = %.2f\n", root1, root2);
+
+    return 
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+    float xA = 1, yA = 1;
+    float xB, yB, xC, yC;
+    int k;
+    float a, b, c, p, s, r;
+
+    printf("Enter the value of k: ");
+    scanf("%d", &k);
+
+    xB = 2 * k;
+    yB = 2 * k - 1;
+    xC = -2 * k;
+    yC = k + 2;
+
+    a = sqrt(pow(xB - xA, 2) + pow(yB - yA, 2));
+    b = sqrt(pow(xC - xB, 2) + pow(yC - yB, 2));
+    c = sqrt(pow(xC - xA, 2) + pow(yC - yA, 2));
+
+    p = (a + b + c) / 2;
+    s = sqrt(p * (p - a) * (p - b) * (p - c));
+    r = s / p;
+    printf("
+#include <stdio.h>
+
+int main() {
+    double a = 1000, b = 0.0001;
+    double result;
+
+    result = ((a + b) * (a + b) - (a * a + 2 * a * b)) / (b * b);
+
+    printf("((a + b)^2 - (a^2 + 2ab)) / (b^2) = %.15f\n", result);
+
+    return 0;
+}
+
