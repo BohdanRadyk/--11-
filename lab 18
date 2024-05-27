@@ -1,0 +1,90 @@
+#include <stdio.h>
+int main(void)
+{
+struct { int a; int b;
+} x, y;
+x.a = 10;
+y = x; /* присвоювання одної структури другій */
+printf("%d", y.a);
+return 0;
+}
+
+include <stdio.h>
+struct student {
+    char name[30];
+    int kurs;
+    int age;
+};
+
+int main() {
+    struct student stud1;
+
+    printf("Vvedit imya:");
+    fgets(stud1.name, sizeof(stud1.name), stdin);
+
+    printf("Vvedit vik:");
+    scanf("%d", &stud1.age);
+
+    printf("Vvedit kyrs:");
+    scanf("%d", &stud1.kurs);
+
+    printf("Student %s\n", stud1.name);
+    printf("Kyrs %d\n", stud1.kurs);
+    printf("Vik %d\n", stud1.age);
+
+    return 0;
+}
+
+#include <stdio.h>
+/* визначення структури*/ struct student
+{
+    char name[30];
+    int kurs;
+    int age;
+};
+int main() {
+
+struct student stud[10];
+    int i, n;
+    printf("Kilkict studentiv:");
+    scanf("%d", &n);
+    for(i=0;i<3;i++)
+    {
+        printf("Vvedit imya:");
+        scanf("%s", stud[i].name);
+        printf("Vvedit vik:");
+        scanf("%d", &stud[i].age);
+        printf("Vvedit kurs:");
+        scanf("%d", &stud[i].kurs);
+    }
+/* Виведення */ for(i=0;i<n;i++) {
+        printf("Student %s\n", stud[i].name);
+        printf("Kurs %d\n", stud[i].kurs);
+        printf("Vik %d\n", stud[i].age) } return 0;}#include <stdio.h>
+/* визначення структури*/ struct info
+{   char name[10];
+    int vaga;
+    float vusota;
+    int age;
+};
+int main() {
+
+struct info info1;
+        printf("Vvedit imya:");
+        scanf("%s", &info1.name);
+        printf("Vvedit vagu:");
+        scanf("%d", &info1.vaga);
+        printf("Vvedit vik:");
+        scanf("%d", &info1.age);
+        printf("Vvedit vusoty:");
+        scanf("%f", &info1.vusota);
+        printf("****************************************************************************************** \n");
+        printf("info about employer \n");
+        printf("imya %s\n", info1.name);
+        printf("vaga %d\n", info1.vaga);
+        printf("vusota %f\n", info1.vusota);
+        printf("Vik %d\n", info1.age);
+
+return 0;
+}
+
