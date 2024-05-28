@@ -1,0 +1,136 @@
+1)
+#include <stdio.h>
+void main(void)
+{ float var1, var2;
+printf( format: "Введіть перше число (var1); ");
+scanf( format: "%f", &var1);
+printf( format: "Введить друге число (var2); ");
+scanf( format: "%f", &var2);
+printf( format: "var1 > var2 дaе %d\n", var1 > var2);
+printf( format: "vari < var2 дae %d\n", var1 < var2);
+printf( format: "var1 == var2 Aae %d\n", var1 == var2);
+printf( format: "var1 >= var2 дa %d\n", var1 >= var2);
+printf( format: "var1 <= var2 дae %d\n", var1 <= var2);
+printf( format: "var1 1= var2 дae %d\n", var1 != var2);
+printf( format: "Ivari дae %d\n", Ivar1);
+printf( format: "Ivar2 дae %d\n", Ivar2);
+printf( format: "var1 || var2 дае %d\n", var1 || var2);
+printf( format: "var1 && var2 дaе %d\n", var1 && var2);
+2)
+#include <stdio.h>
+
+int main(void) {
+    float var1, var2;
+    printf("Введіть перше число (var1): ");
+    scanf("%f", &var1);
+    printf("Введіть друге число (var2): ");
+    scanf("%f", &var2);
+
+    printf("var1 > var2 дає %d\n", var1 > var2);
+    printf("var1 < var2 дає %d\n", var1 < var2);
+    printf("var1 == var2 дає %d\n", var1 == var2);
+    printf("var1 >= var2 дає %d\n", var1 >= var2);
+    printf("var1 <= var2 дає %d\n", var1 <= var2);
+    printf("var1 != var2 дає %d\n", var1 != var2);
+
+    // Отримання цілочисельного значення
+    int Ivar1 = (int)var1;
+    int Ivar2 = (int)var2;
+    printf("Ivar1 дає %d\n", Ivar1);
+    printf("Ivar2 дає %d\n", Ivar2);
+
+    printf("var1 || var2 дає %d\n", var1 || var2);
+    printf("var1 && var2 дає %d\n", var1 && var2);
+
+    return 0;
+}
+3)
+#include <stdio.h>
+
+#define TRUE "ICTHHA"
+#define FALSE "XMBHICTL"
+
+int main(void) {
+    float var1, var2;
+
+    printf("Введіть перше число (var1): ");
+    scanf("%f", &var1);
+    
+    printf("Введіть друге число (var2): ");
+    scanf("%f", &var2);
+
+    printf("var1 > var2 є %s\n", var1 > var2 ? TRUE : FALSE);
+    printf("var1 < var2 є %s\n", var1 < var2 ? TRUE : FALSE);
+    printf("var1 == var2 є %s\n", var1 == var2 ? TRUE : FALSE);
+    printf("var1 >= var2 є %s\n", var1 >= var2 ? TRUE : FALSE);
+    printf("var1 <= var2 є %s\n", var1 <= var2 ? TRUE : FALSE);
+    printf("var1 != var2 є %s\n", var1 != var2 ? TRUE : FALSE);
+    printf("var1 || var2 є %s\n", var1 || var2 ? TRUE : FALSE);
+    printf("var1 && var2 є %s\n", var1 && var2 ? TRUE : FALSE);
+    printf("!var1 є %s\n", !var1 ? TRUE : FALSE);
+    printf("!var2 є %s\n", !var2 ? TRUE : FALSE);
+
+    return 0;
+}
+4)#include <stdio.h>
+#include <conio.h>
+
+int main() {
+    int a = 0, b = 3, c;
+    c = b % 2 || (a >= 0) && (++b / 2 * a) == 0;
+    printf("a=%d, c=%d\n", a, c);
+    getch();
+    return 0;
+}
+5)
+#include <stdio.h>
+
+int main() {
+    unsigned int x = 2, y = 1, z = 3, res;
+    char chx = 0xAF;
+
+    printf("%u\n", x & y | z);
+
+    x = y = z = 2;
+    printf("%u\n", x | y & z);
+
+    x = 3; y = 0; z = 1;
+    printf("%u\n", x ^ y | ~z);
+
+    printf("%u\n", 310 ^ ~(-1));
+
+    x = 1; y = 2; z = 0;
+    printf("%u\n", 18210);
+
+    printf("%u\n", (prime - 1) ^ 286);
+
+    printf("%u\n", 21081);
+
+    printf("%u\n", 2 + ~(-0) | -1);
+
+    printf("%u\n", (prime - 3) | (16 + theta));
+
+    x = theta * 0xAF;
+    printf("%u\n", x >> 4);
+
+    chx <<= 7;
+    printf("0x=%X\n", chx);
+
+    return 0;
+}
+6)
+#include <stdio.h>
+
+int main() {
+    char x = 255, y = 127;
+
+    printf("%u\n", x);  // Corrected format specifier
+    printf("%u\n", y);  // Corrected format specifier
+    printf("%u\n", x & ~y);  // Corrected format specifier and added missing semi-colon
+    y = 127;  // Reassigning y back to 127
+    printf("%u\n", x & y);
+    y = 128;
+    printf("%u\n", x | y);  // Corrected format specifier and added missing semi-colon
+
+    return 0;  // Added return statement
+}
