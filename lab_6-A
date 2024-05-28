@@ -1,0 +1,224 @@
+1)#include <stdio.h>
+
+int main()
+{
+    float a = 23.5;
+    float b = 3.14159;
+    float c = a * b;
+
+    printf("Значення змінної 'a' рівне %.2f.\n", a);
+    printf("Значення числа 'пі' рівне %.5f.\n", b);
+    printf("Сума сил комети набуває широкого розповсюдження.\n");
+    printf("%d\n", '%');
+    
+    return 0;
+}
+2)
+#include <stdio.h>
+
+main()
+
+{
+printf("/%d/\n",557);
+printf("/%10d/\n",557);
+printf("/%-10d/\n\n",557);
+
+printf("/%8d/\n",21949);
+printf("/%8d/\n",-1611);
+printf("/%8d/\n",-8380);
+printf("/%8d/\n",2143);
+
+printf("/%f/\n",6543.12);
+printf("/%e/\n", 6543.12);
+printf("/%4.2f\n", 6543.12);
+printf("/%3.1f\n", 6543.12);
+printf("/%10.3f/\n", 6543.12);
+printf("/%10.3e/\n", 6543.12); 
+    return 0;
+}
+3)
+#include <stdio.h>
+#define riadok "Чудова погода" 
+main()
+
+{
+printf("/%2s/\n", riadok);
+printf("/%15.s/\n", riadok);
+
+printf("%d\n", 557);
+printf("%o\n", 557);
+printf("%x\n", 557);
+printf("%d\n", -557);
+    return 0;
+}
+4)
+#include <stdio.h>
+main()
+{
+int vik;
+char name[30];
+printf("Vash vik?\n");
+scanf("%d",&vik);
+printf("Vvedit vashe imya\n");
+scanf("%s", name);
+printf("Pryvit %s jakomy %d rokiv",name, vik);
+    return 0;
+}
+5)
+#include <stdio.h>
+#include <conio.h>
+
+#define STOP -1
+
+int main() {
+    char ch;
+    ch = getchar();
+    
+    while (ch != STOP) {
+        putchar(ch);
+        ch = getchar();
+    }
+    
+    return 0;
+}
+6)
+#include <stdio.h>
+
+int main() {
+    int integerNumber = 42;
+    float floatNumber = 3.14159;
+    char character = 'A';
+    long longNumber = 1234567890;
+
+    // Вивід значень з різними модифікаторами
+    printf("Ціле число (int): %d\n", integerNumber);
+    printf("Число з плаваючою точкою (float): %f\n", floatNumber);
+    printf("Символ (char): %c\n", character);
+    printf("Довге ціле число (long): %ld\n", longNumber);
+
+    // Вивід значень з іншими модифікаторами
+    printf("Значення float з експоненціальним форматом: %e\n", floatNumber);
+    printf("Значення float з фіксованим форматом: %.2f\n", floatNumber);
+    printf("Значення float у шістнадцятковому форматі: %a\n", floatNumber);
+
+    return 0;
+}
+7)
+#include <stdio.h>
+
+int main() {
+    char characters[] = "ABCDEFGHIJ";
+
+    printf("Символ\tДесятковий код\tВісімковий код\tШістнадцятковий код\n");
+    for (int i = 0; i < 10; ++i) {
+        char ch = characters[i];
+        printf("%c\t%d\t\t%o\t\t%x\n", ch, ch, ch, ch);
+    }
+
+    return 0;
+}
+8)
+#include <stdio.h>
+
+int main() {
+    // Оголошення змінних
+    float price1, price2, price3, price4, price5;
+    int quantity1, quantity2, quantity3, quantity4, quantity5;
+    float totalCost;
+
+    // Введення цін і кількостей товарів
+    printf("Введіть ціну товару 1: ");
+    scanf("%f", &price1);
+    printf("Введіть кількість товару 1: ");
+    scanf("%d", &quantity1);
+
+    // Аналогічно для інших товарів
+
+    // Обчислення вартості купівлі
+    totalCost = price1 * quantity1 + price2 * quantity2 + price3 * quantity3 +
+                 price4 * quantity4 + price5 * quantity5;
+
+    // Вивід результатів у вигляді таблиці
+    printf("\nТовар\tЦіна\tКількість\tВартість\n");
+    printf("1\t%.2f\t%d\t\t%.2f\n", price1, quantity1, price1 * quantity1);
+    // Аналогічно для інших товарів
+
+    printf("\nЗагальна вартість купівлі: %.2f\n", totalCost);
+
+    return 0;
+}
+9)
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+    double radius;
+    printf("Введіть радіус круга: ");
+    scanf("%lf", &radius);
+
+    if (radius < 0) {
+        printf("Радіус не може бути від'ємним.\n");
+        return 1;
+    }
+
+    double circumference = 2 * M_PI * radius;
+    double area = M_PI * radius * radius;
+
+    printf("Довжина кола: %.2f\n", circumference);
+    printf("Площа круга: %.2f\n", area);
+
+    return 0;
+}
+10)
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+    double a, b, c;
+    double discriminant, root1, root2;
+
+    printf("Введіть коефіцієнт a: ");
+     scanf("%lf", &a);
+
+    printf("Введіть коефіцієнт b: ");
+    scanf("%lf", &b);
+
+    printf("Введіть коефіцієнт c: ");
+    scanf("%lf", &c);
+
+    // Обчислення дискримінанту
+    discriminant = b * b - 4 * a * c;
+
+    if (discriminant > 0) {
+        root1 = (+b + sqrt(discriminant)) / (2 * a);
+        root2 = (-b - sqrt(discriminant)) / (2 * a);
+        printf("Два корені: %.2lf і %.2lf\n", root1, root2);
+    } else if (discriminant == 0) {
+        root1 = -b / (2 * a);
+        printf("Один корінь: %.2lf\n", root1);
+    } else {
+        double realPart = -b / (2 * a);
+        double imaginaryPart = sqrt(-discriminant) / (2 * a);
+        printf("Комплексні корені: %.2lf + %.2lfi і %.2lf - %.2lfi\n", realPart, imaginaryPart, realPart, imaginaryPart);
+    }
+
+    return 0;
+}
+11)
+#include <stdio.h>
+
+int main() {
+    // Задані значення a та b
+    double a = 0.0001;
+    double b = 10000;
+
+    // Обчислення допоміжних змінних
+    double c = a * a + b * b;
+    double d = b * b * a;
+    
+    // Виведення результатів
+    printf("c = %.6f\n", c);
+    printf("d = %.6f\n", d);
+
+    return 0;
+}
