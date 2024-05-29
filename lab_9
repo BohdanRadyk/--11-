@@ -1,0 +1,45 @@
+1)
+#include <stdio.h>
+
+int main() {
+    unsigned int a = 017;
+    unsigned int b = 036;
+    unsigned int bitwise_and = a & b;
+    printf("%o\n", bitwise_and);
+    unsigned int bitwise_or = a | b;
+    printf("%o\n", bitwise_or);
+    unsigned int left_shift = a << 2;
+    printf("%o\n", left_shift);
+    unsigned int right_shift = a >> 2;
+    printf("%o\n", right_shift);
+    return 0;
+}
+2)
+#include <stdio.h>
+#include <conio.h>
+int main() {
+    int a = 0, b = 3, c;
+    c = b % 2 || (a >= 0) && (++b / 2 * a) == 0;
+    printf("a=%d, c=%d\n", a, c);
+    getch();
+    return 0;
+}
+3)
+#include <stdio.h>
+#include <conio.h>
+int main() {
+    int a = 1, b = 0, c;
+    c = b * 2 || (a >= 0) && (++b * a) == 0;
+    printf("c=%d\n", c);
+    getch();
+    return 0;
+}
+4)
+#include <stdio.h>
+int main() {
+    int a = 1, b = 0, c;
+    c = b * 2 || (a >= 0) && (++b * a) == 0;
+    printf("c = %d\n", c);
+    getchar();
+    return 0;
+}
