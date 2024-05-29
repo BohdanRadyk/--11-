@@ -1,0 +1,130 @@
+#include “stdio.h”
+int main()
+{
+FILE *in; //Опис вказівника на файл int ch;
+if(in=fopen(“proba”,”r”))!=NULL) // Відкривається файл для читання, перевіряється чи він існує. Вказівник in тепер посилається на структуру FILE, що пов’язана із proba.
+{
+while((ch=getc(in)!=EOF)// Отримується символ із in putc(ch,stdout);// Виведення символа в стандартний потік на екран. fclose(in);
+}
+else
+printf(“Файл proba не відкривається \n”);
+}
+
+
+2)
+#include <stdio.h>
+
+int main() {
+    FILE *ff;
+    int base;
+  
+    ff = fopen("sam", "r");
+    fscanf(ff, "%d", &base);
+    fclose(ff);
+    ff = fopen("data", "a");
+    fprintf(ff, "sam is %d.\n", base);
+    fclose(ff);
+    return 0;
+}
+
+
+3)
+#include <stdio.h>
+#define LINE 80
+
+int main() {
+    FILE *ff;
+    char string[LINE];
+
+    ff = fopen("opus", "r");
+    while (fgets(string, LINE, ff) != NULL)
+        puts(string);
+    fclose(ff);
+    return 0;
+}
+
+
+4)
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+    int f1, f2, f3, f4, f5;
+    FILE *fp;
+
+    fp = fopen("C:\\temp\\sample.txt", "r");
+
+    if (fp == NULL) {
+        printf("Помилка відкриття файлу.\n");
+        return 1;
+    }
+
+    fscanf(fp, "%d\n%d\n%d\n%d\n%d\n", &f1, &f2, &f3, &f4, &f5);
+    printf("The values are %d, %d, %d, %d, %d.\n", f1, f2, f3, f4, f5);
+
+    fclose(fp);
+
+    return 0;
+}
+
+
+5)
+#include <stdio.h>
+
+int main() {
+    FILE *fp;
+    int num, cube;
+
+    fp = fopen("C:\\temp\\proba.txt", "r");
+
+    if (fp == NULL) {
+        printf("Помилка відкриття файлу.\n");
+        return 1;
+    }
+
+    printf("Значення та їх куби з файла proba.txt:\n");
+    while (fscanf(fp, "%d %d", &num, &cube) == 2) {
+        printf("%d^3 = %d\n", num, cube);
+    }
+
+    fclose(fp);
+
+    return 0;
+}
+
+
+6)
+#include <stdio.h>
+
+int main() {
+    int numbers[13] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13};
+    FILE *fp;
+    int i, read_numbers[13];
+
+    // Запис масиву numbers у файл
+    fp = fopen("numbers.txt", "w");
+    if (fp == NULL) {
+        printf("Помилка відкриття файлу для запису.\n");
+        return 1;
+    }
+    for (i = 0; i < 13; i++) {
+        fprintf(fp, "%d ", numbers[i]);
+    }
+    fclose(fp);
+
+    // Зчитування масиву з файлу
+    fp = fopen("numbers.txt", "r");
+    if (fp == NULL) {
+        printf("Помилка відкриття файлу для читання.\n");
+        return 1;
+    }
+    printf("Масив, прочитаний з файлу:\n");
+    for (i = 0; i < 13; i++) {
+        fscanf(fp, "%d", &read_numbers[i]);
+        printf("%d ", read_numbers[i]);
+    }
+    fclose(fp);
+
+    return 0;
+}
+
