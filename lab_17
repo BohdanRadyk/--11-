@@ -1,0 +1,67 @@
+1)
+#include <stdio.h>
+
+int main(void)
+{
+    int x = 99;
+    int *p1, *p2;
+    p1 = &x;
+    p2 = p1;
+
+    // Друк значення два рази
+    printf("Значення за адресою p1 і p2: %d %d\n", *p1, *p2);
+    printf("Адреси вказівників p1 і p2: %p %p\n", (void *)p1, (void *)p2);
+
+    return 0;
+}
+2)
+#include <stdio.h>
+
+#define SIZE 5
+
+int stack[SIZE];
+int *tos, *p1;
+
+void push(int i);
+int pop(void);
+
+int main(void)
+{
+    int value;
+
+    tos = stack; // tos посилається на основу стеку
+    p1 = stack; // ініціалізація p1
+
+    do {
+        printf("Введіть значення: ");
+        scanf("%d", &value);
+
+        if (value != 0)
+            push(value);
+        else
+            printf("Значення на вершині рівне %d\n", pop());
+    } while (value != -1);
+
+    return 0;
+}
+
+void push(int i)
+{
+    if (p1 == (tos + SIZE)) {
+        printf("Переповнення стека.\n");
+        exit(1);
+    }
+    *p1 = i;
+    p1++;
+}
+
+int pop(void)
+{
+    if (p1 == tos) {
+        printf("Стек пустий.\n");
+        exit(1);
+    }
+    p1--;
+    return *(p1 + 1);
+}
+3)
