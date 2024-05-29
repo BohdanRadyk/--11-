@@ -1,0 +1,104 @@
+1)
+#include <stdio.h>
+
+int main(void)
+{
+    FILE *in; // Опис вказівника на файл
+    char ch;
+    if ((in = fopen("proba.txt", "r")) == NULL) 
+        printf("Файл proba не відкрився\n"); 
+    else
+    {
+        while ((ch = getc(in)) != EOF) 
+            putchar(ch); 
+        fclose(in);
+    }
+    return 0;
+}
+2)
+#include <stdio.h>
+
+int main() {
+    FILE *ff;
+    ff = fopen("sam", "r"); // відкривається файл із іменем sam, який асоціюється з змінником ff.
+    fclose(ff);
+
+    int base;
+    fscanf(ff, "%d", &base); // ІІІ вказує на файл із іменем sam
+    ff = fopen("data", "a"); // доповнення
+    fprintf(ff, "sam is %d.\n", base); // до записування data */
+    fclose(ff);
+    
+    return 0;
+}
+3)
+#include <stdio.h>
+
+int main() {
+    FILE *ff;
+    char string[80]; // Рядок для збереження прочитаного тексту
+
+    ff = fopen("opus", "r"); // Відкриваємо файл "opus" для читання
+    if (ff == NULL) {
+        printf("Не вдалося відкрити файл.\n");
+        return 1;
+    }
+
+    // Зчитуємо рядки з файлу та виводимо їх
+    while (fgets(string, sizeof(string), ff) != NULL) {
+        printf("%s", string);
+    }
+
+    fclose(ff); // Закриваємо файл
+    return 0;
+}
+4)
+#include <stdio.h>
+
+int main() {
+    int f1, f2, f3, f4, f5;
+    FILE fp;
+    fp = fopen("C:\\temp\\sample.txt", "w"); / Відкриття файлу в текстовому режимі */
+
+    /* Запис значень у файл */
+    fprintf(fp, "%d\n%d\n%d\n%d\n%d\n", f1, f2, f3, f4, f5);
+
+    printf("Значення: %d, %d, %d, %d, %d\n", f1, f2, f3, f4, f5);
+
+    fclose(fp); /* Закриття файлу fp */
+    return 0;
+}
+5)
+#include <stdio.h>
+
+int main() {
+    FILE *file;
+    int numbers[11] = {10, 20, 30, 40, 50, 60, 70, 80, 90, 100, 110};
+    int read_numbers[11];
+
+    // Записуємо змінні в файл
+    file = fopen("numbers.bin", "wb");
+    if (file == NULL) {
+        perror("Error opening file for writing");
+        return 1;
+    }
+    fwrite(numbers, sizeof(int), 11, file);
+    fclose(file);
+
+    // Читаємо змінні з файлу в масив
+    file = fopen("numbers.bin", "rb");
+    if (file == NULL) {
+        perror("Error opening file for reading");
+        return 1;
+    }
+    fread(read_numbers, sizeof(int), 11, file);
+    fclose(file);
+
+    // Виводимо масив на екран
+    for (int i = 0; i < 11; i++) {
+        printf("%d ", read_numbers[i]);
+    }
+    printf("\n");
+
+    return 0;
+}
