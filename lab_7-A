@@ -1,0 +1,91 @@
+1)
+#include <stdio.h>
+#include <conio.h>
+
+int main() {
+    printf("Числа типу int займають %lu байт.\n", sizeof(int));
+    printf("Числа типу char займають %lu байт.\n", sizeof(char));
+    printf("Числа типу float займають %lu байт.\n", sizeof(float));
+    printf("Числа типу double займають %lu байт.\n", sizeof(double));
+    getch();
+    return 0;
+}
+2)
+#include <stdio.h>
+#include <conio.h>
+
+int main() {
+    int n = 1;
+    printf("n=%d\n", n);
+
+    // Prefix increment (++n)
+    printf("prefix: ++n=%d\n", ++n);
+
+    // Postfix increment (n++)
+    printf("postfix: n++=%d\n", n++);
+
+    // After postfix increment
+    printf("after-postfix: n=%d\n", n);
+
+    // Prefix decrement (--n)
+    printf("prefix: --n=%d\n", --n);
+
+    // Postfix decrement (n--)
+    printf("postfix: n--=%d\n", n--);
+
+    // After postfix decrement
+    printf("after-postfix: n=%d\n", n);
+
+    getch();
+    return 0;
+}
+3)
+#include <stdio.h>
+
+int main() {
+    int n = 1, m = 1;
+    int res1, res2;
+
+    // Calculate res1
+    res1 = n + (m--);
+    printf("res1=%d\n", res1);
+
+    // Calculate res2
+    res2 = m-- + n;
+    printf("res2=%d\n", res2);
+
+    return 0;
+}
+4)
+#include <stdio.h>
+
+int main() {
+    int a, b = 3;
+    float c;
+
+    c = b % 2 + (a = ++b / 2) + 1.1;
+    printf("a=%d, c=%4.1f\n", a, c);
+
+    return 0;
+}
+5)
+#include <stdio.h>
+
+int main() {
+    int x = 2;
+    float y = 2.1;
+    float z = ++x * y + y / (float)x; 
+    printf("x=%d z=%f\n", x, z); 
+    return 0;
+}
+6)
+#include <stdio.h>
+
+int main() {
+    float x = 1.1, y = 0.2;
+    int a;
+    float z = (a - x) * y + 3 * x; // Виправлений вираз
+    printf("z=%4.1f\n", z); // Змінено формат виводу для 'z'
+    return 0;
+}
+
