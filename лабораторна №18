@@ -1,0 +1,127 @@
+#include<stdio.h>
+
+int main(void) {
+    struct {
+        int a;
+        int b;
+    } x, y;
+
+    x.a = 10;
+    y = x; // Присвоювання однієї структури іншій
+    printf("%d", y.a);
+    
+    return 0;
+}
+
+
+
+#include <stdio.h>
+#include <string.h>
+
+struct student {
+    char name[30];
+    int kurs;
+    int age;
+};
+
+int main() {
+    struct student stud1;
+    printf("Введіть ім'я: ");
+    fgets(stud1.name, sizeof(stud1.name), stdin);
+
+    size_t len = strlen(stud1.name);
+    if (len > 0 && stud1.name[len - 1] == '\n') {
+        stud1.name[len - 1] = '\0';
+    }
+
+    printf("Введіть вік: ");
+    scanf("%d", &stud1.age);
+    printf("Введіть курс: ");
+    scanf("%d", &stud1.kurs);
+    printf("Студент %s\n", stud1.name);
+    printf("Курс %d\n", stud1.kurs);
+    printf("Вік %d\n", stud1.age);
+
+    return 0;
+}
+
+
+
+
+
+#include<stdio.h>
+
+/* Визначення структури */
+struct student
+{
+    char name[30];
+    int kurs;
+    int age;
+};
+
+int main()
+{
+    /* Оголошення масиву на 10 структур */
+    struct student stud[10];
+    int i, n;
+    printf("Кількість студентів: ");
+    scanf("%d", &n);
+    for(i = 0; i < n; i++)
+    {
+        printf("Введіть ім'я: ");
+        scanf("%s", stud[i].name);
+        printf("Введіть вік: ");
+        scanf("%d", &stud[i].age);
+        printf("Введіть курс: ");
+        scanf("%d", &stud[i].kurs);
+    }
+    /* Виведення */
+    for(i = 0; i < n; i++)
+    {
+        printf("Студент %s\n", stud[i].name);
+        printf("Курс %d\n", stud[i].kurs);
+        printf("Вік %d\n", stud[i].age);
+    }
+    return 0;
+}
+
+
+
+
+
+#include <stdio.h>
+
+// Визначення структури для зберігання інформації про працівника
+struct Employee {
+    char name[50];
+    float weight;
+    float height;
+    int age;
+};
+
+int main() {
+    struct Employee emp;
+
+    // Введення даних про працівника з клавіатури
+    printf("Введіть ім'я працівника: ");
+    fgets(emp.name, sizeof(emp.name), stdin);
+    printf("Введіть вагу працівника: ");
+    scanf("%f", &emp.weight);
+    printf("Введіть висоту працівника: ");
+    scanf("%f", &emp.height);
+    printf("Введіть вік працівника: ");
+    scanf("%d", &emp.age);
+
+    // Виведення інформації про працівника
+    printf("\nІнформація про працівника %s\n", emp.name);
+    printf("----------------------------------------\n");
+    printf("Вага: %.2f кг\n", emp.weight);
+    printf("Висота: %.2f см\n", emp.height);
+    printf("Вік: %d років\n", emp.age);
+
+    return 0;
+}
+
+
+
+
