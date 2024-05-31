@@ -1,0 +1,163 @@
+#include <stdio.h>
+int main (void) {
+int x;
+for (x = 1; x <= 100; x ++)
+printf( "% d", x);
+return 0;
+}
+
+
+
+
+#include <stdio.h>
+
+int main() {
+    int i = 2;
+    while (i <= 1024) {
+        i = i * 2;
+        printf("%d\n", i);
+    }
+    return 0;
+}
+
+
+
+
+
+
+#include <stdio.h>
+
+int main() {
+    int j = 0, k = 0;
+    while (j < 5) {
+        k += 10;
+        j++;
+    }
+    printf("k=%d\n", k);
+    return 0;
+}
+
+
+
+
+
+#include <stdio.h>
+
+int main() {
+    int a = 2, b = 10, c;
+    do {
+        b = b + a;
+        c = 10 * a;
+        a++;
+    } while (a < 5);
+    printf("\nb=%d c=%d a=%d", b, c, a);
+    return 0;
+}
+
+
+
+
+
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void) {
+    int magic;
+    int guess;
+
+    magic = rand() % 100 + 1; // Генеруємо випадкове число у діапазоні від 1 до 100
+    printf("Вгадайте число: ");
+    scanf("%d", &guess);
+
+    if (guess == magic) {
+        printf("Вірно! Магічне число рівне %d\n", magic);
+    } else {
+        printf("Невірно\n");
+        while (guess != magic) {
+            printf("Вгадайте число: ");
+            scanf("%d", &guess);
+            printf("Невірно\n");
+        }
+    }
+    return 0;
+}
+
+
+
+
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void) {
+    int magic;
+    int guess;
+    int m = 1;
+
+    magic = rand() % 100 + 1; // Генеруємо випадкове число у діапазоні від 1 до 100
+    printf("Вгадайте число: ");
+    scanf("%d", &guess);
+
+    if (guess == magic) {
+        printf("Вірно! Магічне число рівне %d\n", magic);
+    } else {
+        printf("Невірно\n");
+        printf("m=%d\n", m);
+        while (guess != magic) {
+            m++;
+            printf("Вгадайте число: ");
+            scanf("%d", &guess);
+            printf("Невірно\n");
+            printf("m=%d\n", m);
+        }
+    }
+    return 0;
+}
+
+
+
+
+
+
+#include <stdio.h>
+#include <conio.h>
+
+int main() {
+    int fahr, celsius;
+    int lower, upper, step;
+
+    lower = 0;
+    upper = 300;
+    step = 20;
+    fahr = lower;
+
+    printf("\n\nCelsius Fahrenheit\n");
+    while (fahr <= upper) {
+        celsius = 5 * (fahr - 32) / 9;
+        printf("%10d\t%8d\n", fahr, celsius);
+        fahr = fahr + step;
+    }
+
+    getch();
+    return 0;
+}
+
+
+
+
+
+#include <stdio.h>
+
+int main() {
+    int n;
+    printf("Введіть розмір трикутника: ");
+    scanf("%d", &n);
+    for (int i = 0; i < n; i++) {
+        for (int j = 0; j <= i; j++) {
+            printf("* ");
+        }
+        printf("\n");
+    }
+    return 0;
+}
