@@ -1,0 +1,288 @@
+#define PI 3.14159
+#include <stdio.h>
+
+int main() {
+    int a = 5;
+    float b = 23.5;
+    int c = 31000;
+
+    printf("%d метрів тканини коштувало %f гривень.\n", a, b);
+    printf("Значення числа pi рівне %f.\n", PI);
+
+    printf("IBM-сумісні комп'ютери набули широкого розповсюдження.\n");
+    printf("%c%d\n", '$', c);
+
+    return 0;
+}
+
+
+
+
+#include <stdio.h>
+
+int main() {
+    printf("/%d\n", 557);
+    printf("/%2d\n", 557);
+    printf("/%10d\n", 557);
+    printf("/%-10d\n", 557);
+
+    return 0;
+}
+
+
+
+
+#include <stdio.h>
+
+int main() {
+    printf("/%f/\n", 6543.21);
+    printf("/%e/\n", 6543.21);
+    printf("/%4.2f/\n", 6543.21);
+    printf("/%3.1f/\n", 6543.21);
+    printf("/%10.3f/\n", 6543.21);
+    printf("/%10.3e/\n", 6543.21);
+
+    return 0;
+}
+
+
+
+
+#include <stdio.h>
+
+#define riadok "Чудова погода"
+
+int main() {
+    printf("/%2s/\n", riadok);
+    printf("/%15s/\n", riadok);
+    printf("/%15.5s/\n", riadok);
+    printf("/%-15.5s/\n", riadok);
+
+    return 0;
+}
+
+
+
+
+
+#include <stdio.h>
+
+int main() {
+    printf("%d\n", 557);
+    printf("%o\n", 557);
+    printf("%x\n", 557);
+    printf("%d\n", -557);
+    printf("%u\n", -557);
+
+    return 0;
+}
+
+
+
+
+#include <stdio.h>
+
+int main() {
+    int vik;
+    char name[30];
+
+    printf("Vash vik?\n");
+    scanf("%d", &vik);
+
+    printf("Uvedit vase im'ya\n");
+    scanf("%s", name);
+
+    printf("Pryvit, %s, yakomu %d rokiv\n", name, vik);
+
+    return 0;
+}
+
+
+
+
+#include<stdio.h>
+
+#define STOP '*'
+
+int main() {
+    char ch;
+
+    ch = getchar();
+
+m1:
+    if (ch != STOP) {
+        putchar(ch);
+        ch = getchar();
+        goto m1;
+    }
+
+    return 0;
+}
+
+
+
+
+#include <stdio.h>
+
+int main() {
+    int integer = 123;
+    float floating_point = 123.456;
+    char character = 'A';
+    long long_integer = 1234567890;
+
+    printf("Integer: %d\n", integer);
+    printf("Floating point: %f\n", floating_point);
+    printf("Character: %c\n", character);
+    printf("Long integer: %ld\n", long_integer);
+
+    return 0;
+}
+
+
+
+
+
+#include <stdio.h>
+
+int main() {
+    int i;
+    char symbol = ' ';
+
+    printf("Symbol\tDecimal\tOctal\tHexadecimal\n");
+    for (i = 0; i < 10; i++) {
+        printf("%c\t%d\t%o\t%x\n", symbol, symbol, symbol, symbol);
+        symbol++;
+    }
+
+    return 0;
+}
+
+
+
+
+
+#include <stdio.h>
+
+#define PI 3.14159
+
+int main() {
+    float radius, circumference, area;
+
+    printf("Введіть радіус круга: ");
+    scanf("%f", &radius);
+
+    circumference = 2 * PI * radius;
+    area = PI * radius * radius;
+
+    printf("Довжина кола: %.2f\n", circumference);
+    printf("Площа круга: %.2f\n", area);
+
+    return 0;
+}
+
+
+
+
+
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+    float a, b, c;
+    float discriminant, root1, root2;
+
+    printf("Введіть коефіцієнти a, b та c (через пробіл): ");
+    scanf("%f %f %f", &a, &b, &c);
+
+    // Обчислення дискримінанту
+    discriminant = b * b - 4 * a * c;
+
+    // Обчислення коренів
+    if (discriminant > 0) {
+        root1 = (-b + sqrt(discriminant)) / (2 * a);
+        root2 = (-b - sqrt(discriminant)) / (2 * a);
+        printf("Корені квадратного рівняння: %.2f та %.2f\n", root1, root2);
+    } else if (discriminant == 0) {
+        root1 = root2 = -b / (2 * a);
+        printf("Квадратне рівняння має два однакові корені: %.2f\n", root1);
+    } else {
+        float realPart = -b / (2 * a);
+        float imaginaryPart = sqrt(-discriminant) / (2 * a);
+        printf("Корені квадратного рівняння: %.2f + %.2fi та %.2f - %.2fi\n", realPart, imaginaryPart, realPart, imaginaryPart);
+    }
+
+    return 0;
+}
+
+
+
+
+
+
+#include <stdio.h>
+
+int main() {
+    char ch;
+
+    printf("Введіть символи (натисніть Ctrl+D або введіть символ '%'): ");
+
+    while ((ch = getchar()) != '%') {
+        putchar(ch);
+    }
+
+    printf("\a"); // Генерація звукового сигналу
+
+    return 0;
+}
+
+
+
+
+
+#include<stdio.h>
+#include<math.h>
+
+int main() {
+    double x1 = 1, y1 = 1;
+    double x2 = 18, y2 = 17;
+    double x3 = -18, y3 = 11;
+
+    double AB = sqrt(pow(x2 - x1, 2) + pow(y2 - y1, 2));
+    double BC = sqrt(pow(x3 - x2, 2) + pow(y3 - y2, 2));
+    double AC = sqrt(pow(x3 - x1, 2) + pow(y3 - y1, 2));
+
+    double p = (AB + BC + AC) / 2;
+    double S = sqrt(p * (p - AB) * (p - BC) * (p - AC));
+    double r = S / p;
+
+    printf("Периметр трикутника: %lf\n", AB + BC + AC);
+    printf("Площа трикутника: %lf\n", S);
+    printf("Радіус вписаного кола: %lf\n", r);
+
+    return 0;
+}
+
+
+
+
+
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+    // Задані значення
+    double a = 100;
+    double b = 0.001;
+
+    // Обчислення чисельника та знаменника
+    double numerator = pow((a - b), 4) - (pow(a, 4) - 4 * pow(a, 3) * b + 6 * pow(a, 2) * pow(b, 2));
+    double denominator = pow(b, 4) - 4 * a * pow(b, 3);
+
+    // Обчислення результату
+    double result = numerator / denominator;
+
+    // Виведення результату
+    printf("Результат: %lf\n", result);
+
+    return 0;
+}
