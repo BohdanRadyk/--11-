@@ -1,0 +1,154 @@
+#include <stdio.h>
+
+int main() {
+    FILE *in; // Опис вказівника на файл
+    int ch;
+
+    if ((in = fopen("proba", "r")) != NULL) { // Відкривається файл для читання, перевіряється чи він існує. Вказівник in тепер посилається на структуру FILE, що пов’язана із proba.
+        while ((ch = getc(in)) != EOF) // Отримується символ із файлу
+            putc(ch, stdout); // Виведення символу в стандартний потік на екран
+        fclose(in);
+    } else {
+        printf("Файл proba не відкривається\n");
+    }
+
+    return 0;
+}
+
+
+
+
+
+#include<stdio.h>
+
+int main() 
+{
+    FILE *ff;
+    int base;
+
+    ff = fopen("sam", "r");
+    fscanf(ff, "%d", &base);
+    fclose(ff);
+
+    ff = fopen("data", "a");
+    fprintf(ff, "samis %d.\n", base);
+    fclose(ff);
+
+    return 0;
+}
+
+
+
+
+#include <stdio.h>
+#define LINE 80
+
+int main() {
+    FILE *ff;
+    char string[LINE];
+
+    ff = fopen("opus", "r");
+    while (fgets(string, LINE, ff) != NULL)
+        puts(string);
+    fclose(ff);
+    return 0;
+}
+
+
+
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+    int f1, f2, f3, f4, f5;
+    FILE *fp;
+
+    fp = fopen("C:\\temp\\sample.txt", "r");
+
+    if (fp == NULL) {
+        printf("Помилка відкриття файлу.\n");
+        return 1;
+    }
+
+    fscanf(fp, "%d\n%d\n%d\n%d\n%d\n", &f1, &f2, &f3, &f4, &f5);
+    printf("Значення: %d, %d, %d, %d, %d.\n", f1, f2, f3, f4, f5);
+
+    fclose(fp);
+
+    return 0;
+}
+
+
+
+
+
+#include <stdio.h>
+
+int main() {
+    FILE *fp;
+   int i;
+    // Відкриваємо файл для запису
+    fp = fopen("proba.txt", "w");
+    // Перевірка на помилку відкриття файлу
+    if (fp == NULL) {
+        printf("Помилка відкриття файлу.\n");
+        return 1;
+    }
+    // Записуємо числа в файл разом із їх кубами
+    for (i = 0; i <= 5; i++) {
+        fprintf(fp, "%d %d\n", i, i * i * i);
+    }
+    // Закриваємо файл
+    fclose(fp);
+    printf("Дані успішно записані у файл proba.txt.\n");
+    return 0;
+}
+
+#include <stdio.h>
+
+int main() {
+    FILE *fp;
+    int i, num;
+
+    // Відкриваємо файл для запису
+    fp = fopen("numbers.txt", "w");
+
+    // Перевірка на помилку відкриття файлу
+    if (fp == NULL) {
+        printf("Помилка відкриття файлу для запису.\n");
+        return 1;
+    }
+
+    // Записуємо числа в файл
+    for (i = 1; i <= 12; i++) {
+        fprintf(fp, "%d\n", i);
+    }
+
+    // Закриваємо файл
+    fclose(fp);
+
+    printf("Числа успішно записані у файл numbers.txt.\n");
+
+    // Відкриваємо файл для читання
+    fp = fopen("numbers.txt", "r");
+
+    // Перевірка на помилку відкриття файлу
+    if (fp == NULL) {
+        printf("Помилка відкриття файлу для читання.\n");
+        return 1;
+    }
+
+    // Читаємо числа з файлу та виводимо їх на екран
+    printf("Числа з файлу numbers.txt:\n");
+    while (fscanf(fp, "%d", &num) != EOF) {
+        printf("%d\n", num);
+    }
+
+    // Закриваємо файл
+    fclose(fp);
+
+    return 0;
+}
+
+
