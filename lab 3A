@@ -1,0 +1,90 @@
+#include <stdio.h>
+
+int main() {
+  float var1, var2;
+
+  printf("Введіть перше число: ");
+  scanf("%f", &var1);
+
+  printf("Введіть друге число: ");
+  scanf("%f", &var2);
+
+  if (var1 > var2) {
+    printf("Перше число більше за друге.\n");
+  } else if (var1 < var2) {
+    printf("Друге число більше за перше.\n");
+  } else {
+    printf("Числа рівні.\n");
+  }
+
+  if (var1 >= var2) {
+    printf("Перше число не менше за друге.\n");
+  }
+
+  if (var1 <= var2) {
+    printf("Перше число не більше за друге.\n");
+  }
+
+  if (var1 != var2) {
+    printf("Числа не рівні.\n");
+  }
+
+  if (var1) {
+    printf("Перше число не дорівнює нулю.\n");
+  }
+
+  if (var2) {
+    printf("Друге число не дорівнює нулю.\n");
+  }
+
+  if (var1 || var2) {
+    printf("Принаймні одне з чисел не дорівнює нулю.\n");
+  }
+
+  if (var1 && var2) {
+    printf("Обидва числа не дорівнюють нулю.\n");
+  }
+
+  return 0;
+}
+
+#include <stdio.h>
+#define TRUE "ІСТИНА"
+#define FALSE "ХИБНІСТЬ"
+
+int main(void) {
+    float var1, var2;
+    printf("Введіть перше число (var1): ");
+    scanf("%f", &var1);
+    printf("Введіть друге число (var2): ");
+    scanf("%f", &var2);
+    printf("var1 > var2 це %s\n", var1 > var2 ? TRUE : FALSE);
+    printf("var1 < var2 це %s\n", var1 < var2 ? TRUE : FALSE);
+    printf("var1 == var2 це %s\n", var1 == var2 ? TRUE : FALSE);
+    printf("var1 >= var2 це %s\n", var1 >= var2 ? TRUE : FALSE);
+    printf("var1 <= var2 це %s\n", var1 <= var2 ? TRUE : FALSE);
+    printf("var1 != var2 це %s\n", var1 != var2 ? TRUE : FALSE);
+    printf("!var1 це %s\n", !var1 ? TRUE : FALSE);
+    printf("!var2 це %s\n", !var2 ? TRUE : FALSE);
+    printf("var1 || var2 це %s\n", var1 || var2 ? TRUE : FALSE);
+    printf("var1 && var2 це %s\n", var1 && var2 ? TRUE : FALSE);
+    return 0;
+}
+
+
+#include <stdio.h>
+
+int main() {
+  int a, b, c;
+
+  a = 0;
+  b = 3;
+  c = 0;
+
+  c = b % 2;  // Отримати залишок від ділення b на 2 і зберегти у c
+  printf("a=%d, c=%d\n", a, c); 
+
+  return 0;
+}
+
+
