@@ -1,0 +1,92 @@
+#include <stdio.h>
+
+int main() {
+    int a = 017;  // Представлене у вісімковій системі число 017 (в десятковій це 15)
+    int b = 036;  // Представлене у вісімковій системі число 036 (в десятковій це 30)
+
+    // Виконання побітової операції І
+    int bitwise_and = a & b;
+
+    // Виконання побітової операції АБО
+    int bitwise_or = a | b;
+
+    // Зсув вліво на 2
+    int left_shift_a = a << 2;
+
+    // Зсув вправо на 2
+    int right_shift_a = a >> 2;
+
+    // Виведення результатів
+    printf("a & b = %o\n", bitwise_and);
+    printf("a | b = %o\n", bitwise_or);
+    printf("a << 2 = %o\n", left_shift_a);
+    printf("a >> 2 = %o\n", right_shift_a);
+
+    return 0;
+}
+
+
+
+
+
+
+
+#include <stdio.h>
+#include <conio.h>
+
+int main() {
+    int a = 0, b = 3, c;
+    c = b % 2 || (a >= 0) && (++b / (2 * a)) == 0;
+    printf("a=%d, c=%d\n", a, c);
+    getch();
+    return 0;
+}
+
+
+
+
+
+
+
+
+#include <stdio.h>
+#include <conio.h>
+
+int main() {
+    int a = 1, b = 0, c;
+    c = b * 2 || (a >= 0) && (++b * a) == 0;
+    printf("c=%d\n", c);
+    getch();
+    return 0;
+}
+
+
+
+
+
+
+
+
+
+
+#include <stdio.h>
+
+int main() {
+    int a = 1, b = 0, c;
+    c = b * 2 || (a >= 0) && (++b * a) == 0;
+    printf("c = %d\n", c);
+    getchar();
+    return 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
